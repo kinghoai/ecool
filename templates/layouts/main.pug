@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='keywords', content='eCool')
+    meta(name='description', content='HTML5 eCool')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title e-Cool
+    // favicon icon
+    link(rel='shortcut icon', href='')
+    // inject css start
+    // == bootstrap
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=vietnamese', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet', type='text/css')
+  body
+    header
+      .container.container--1063.d-flex
+        nav.w-100.navbar.navbar-expand-lg.navbar-light.bg-white
+          a.navbar-brand(href='index.html')
+            img(src='images/logo.png')
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggler', aria-controls='navbarToggler', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarToggler.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto.mt-2.mt-lg-0
+              li.nav-item.active
+                a(href='#') Giới thiệu
+              li.nav-item
+                a(href='#') Sản phẩm
+              li.nav-item
+                a(href='#') Hỗ trợ
+              li.nav-item
+                a(href='#') Tin tức
+              li.nav-item
+                a(href='#') Liên hệ
+            img.search(src='images/search.png')
+            .text-center
+              a.language(href='index.html')
+                img(src='images/languege1.png')
+              a.language(href='index.html')
+                img(src='images/language2.png')
+    section.container
+      block content
+    footer
+      section.subscribe.bg-gray
+        .container.container--608.text-center
+          h3.font-weight-semi-bold.fs-20 Đăng ký nhận thông tin khuyến mại từ Ecool
+          p.font-weight-light.fs-10
+            | Tất cả thông tin về chương trình khuyến mại, chăm sóc khách hàng, sự kiện, hội thảo sẽ được gửi đến Email của bạn.
+          form.subscribe__form
+            input#email.subscribe__input(type='email', placeholder='Địa chỉ Email của bạn...')
+            button.fs-20.font-weight-semi-bold.text-white.subscribe__submit(type='submit') Xác nhận
+      section.menu
+        .container.bg-blue
+          .row
+            .col
+              .menu__logo
+                img(src='images/logo.png')
+              p.text-white.fs-12.sologan
+                | Mang thiên nhiên
+                | đến ngôi nhà bạn.
+            .col
+    // == jquery
+    script(src='js/jquery.min.js')
+    // == bootstrap
+    script(src='js/bootstrap.min.js')
