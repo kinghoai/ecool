@@ -40,8 +40,7 @@ html(lang='en')
                 img(src='images/languege1.png')
               a.language(href='index.html')
                 img(src='images/language2.png')
-    section.container
-      block content
+    block content
     footer
       section.subscribe.bg-gray
         .container.container--608.text-center
@@ -51,8 +50,8 @@ html(lang='en')
           form.subscribe__form
             input#email.subscribe__input(type='email', placeholder='Địa chỉ Email của bạn...')
             button.fs-20.font-weight-semi-bold.text-white.subscribe__submit(type='submit') Xác nhận
-      section.menu
-        .container.bg-blue
+      section.menu.bg-blue
+        .container
           .row
             .col
               .menu__logo
@@ -61,6 +60,48 @@ html(lang='en')
                 | Mang thiên nhiên
                 | đến ngôi nhà bạn.
             .col
+              h5.menu__title.fs-14.text-white.font-weight-semi-bold
+                | Giới thiệu
+                .menu__nav
+                  a.fs-12.d-block.text-white(href='#')
+                    | Về Sơn Hà
+                  a.fs-12.d-block.text-white(href='#')
+                    | Về Ecool
+            .col
+              h5.menu__title.fs-14.text-white.font-weight-semi-bold
+                | Sản phẩm
+                .menu__nav
+                  a.fs-12.d-block.text-white(href='#')
+                    | Điều hòa Inverter
+                  a.fs-12.d-block.text-white(href='#')
+                    | Điều hòa Wifi
+                  a.fs-12.d-block.text-white(href='#')
+                    | Điều hòa 1 Chiều
+                  a.fs-12.d-block.text-white(href='#')
+                    | Điều hòa 2 Chiều
+            .col
+              h5.menu__title.fs-14.text-white.font-weight-semi-bold
+                | Hỗ trợ
+                .menu__nav
+                  a.fs-12.d-block.text-white(href='#')
+                    | Trợ giúp
+                  a.fs-12.d-block.text-white(href='#')
+                    | Tài liệu
+                  a.fs-12.d-block.text-white(href='#')
+                    | Hệ thống đại lý
+            .col
+              h5.menu__title.fs-14.text-white.font-weight-semi-bold
+                | Tin tức
+                .menu__nav
+                  a.fs-12.d-block.text-white(href='#')
+                    | Tin tức và sự kiện
+                  a.fs-12.d-block.text-white(href='#')
+                    | Góc tư vấn
+                  a.fs-12.d-block.text-white(href='#')
+                    | Chương trình ưu đãi
+                  a.fs-12.d-block.text-white(href='#')
+                    | Video
+
     // == jquery
     script(src='js/jquery.min.js')
     // == bootstrap
