@@ -1,0 +1,19 @@
+extends ../layouts/main.pug
+
+
+block content
+    .container
+        .row
+            col-12
+                p Home / Liên hệ
+    h1.text-center.fs-60 Liên hệ eCool
+    form.form-contact(action="#")
+        .container.container--691
+            .row
+                .col-8
+                    input.form-group.border-form-contact.form-control(type='text', placeholder='Họ tên')
+                    input.form-group.border-form-contact.form-control(type='phone', placeholder='Số điện thoại')
+                    input.form-group.border-form-contact.form-control(type='email', placeholder='Email')
+                    textarea.form-group.border-textarea-contact.form-control(row='30')
+                .col-4
+                    
