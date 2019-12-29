@@ -1,15 +1,6 @@
 extends ../layouts/main.pug
-
-
 block content
-    section.slider
-        .slider__item
-            img(src='images/slider1.png')
-            .container
-                .text-center.slider__description
-                    h2.text-white.fs-28 Điều hòa inverter
-                    p.text-white.fs-17 Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
-                    a.text-white.see-more Xem thêm
+    include ../partials/_slider_home.pug
     section.portfolio
         .container.container--924
             h2.text-center.fs-24.font-weight-normal
