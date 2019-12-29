@@ -1,113 +1,38 @@
 section.product-tab
-        .container.container--998
-            ul.nav.justify-content-center(role='tablist')
-                li.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
-                    a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase.active(data-toggle='pill', href='#pills-1', role='tab', aria-controls='pills-1', aria-selected='true') Điều hòa inverter
-                li.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
-                    a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase(data-toggle='pill', href='#pills-2', role='tab', aria-controls='pills-2', aria-selected='false') Điều hòa wifi
-                li.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
-                    a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase(data-toggle='pill', href='#pills-3', role='tab', aria-controls='pills-3', aria-selected='false') Điều hòa 1 chiều
-                li.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
-                    a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase(data-toggle='pill', href='#pills-4', role='tab', aria-controls='pills-4', aria-selected='false') Điều hòa 2 chiều
-                #pills-tabContent.tab-content
-                    #pills-1.tab-pane.show.active(role='tabpanel', aria-labelledby='pills-home-tab') 
-                        .container.container--998
+    .container.container--998
+        ul.nav.justify-content-center(role='tablist')
+            li.btn-product-tab.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
+                a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase.active(data-toggle='pill', href='#pills-1', role='tab', aria-controls='pills-1', aria-selected='true') Điều hòa inverter
+            li.btn-product-tab.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
+                a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase(data-toggle='pill', href='#pills-2', role='tab', aria-controls='pills-2', aria-selected='false') Điều hòa wifi
+            li.btn-product-tab.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
+                a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase(data-toggle='pill', href='#pills-3', role='tab', aria-controls='pills-3', aria-selected='false') Điều hòa 1 chiều
+            li.btn-product-tab.nav-item.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="2.5s")
+                a.nav-link.text-black.fs-16.font-weight-medium.text-uppercase(data-toggle='pill', href='#pills-4', role='tab', aria-controls='pills-4', aria-selected='false') Điều hòa 2 chiều
+        #pills-tabContent.tab-content
+            #pills-1.tab-pane.show.active(role='tabpanel', aria-labelledby='pills-home-tab') 
+                .container.container--998
+                    .row
+                        .col.col--product-left.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="3s")
+                            a.d-flex.flex-column.justify-content-around.bg-gray.product-left(href='#')
+                                img(src='images/product3.png')
+                                p.fs-17.text-black Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
+                        .col.col--product-right
                             .row
-                                .col.col--product-left.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="3s")
-                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-left(href='#')
-                                        img(src='images/product3.png')
-                                        p.fs-17.text-black Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
-                                .col.col--product-right
-                                    .row
-                                        .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="3s")
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="3.5s")
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="4s")
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="4.5s")
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-
-                    #pills-2.tab-pane(role='tabpanel', aria-labelledby='pills-profile-tab')
-                        .container.container--998
-                            .row
-                                .col.col--product-left
-                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-left(href='#')
-                                        img(src='images/product3.png')
-                                        p.fs-17.text-black Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
-                                .col.col--product-right
-                                    .row
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                    #pills-3.tab-pane(role='tabpanel', aria-labelledby='pills-contact-tab')
-                        .container.container--998
-                            .row
-                                .col.col--product-left
-                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-left(href='#')
-                                        img(src='images/product3.png')
-                                        p.fs-17.text-black Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
-                                .col.col--product-right
-                                    .row
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                    #pills-4.tab-pane(role='tabpanel', aria-labelledby='pills-contact-tab')
-                        .container.container--998
-                            .row
-                                .col.col--product-left
-                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-left(href='#')
-                                        img(src='images/product3.png')
-                                        p.fs-17.text-black Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
-                                .col.col--product-right
-                                    .row
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
-                                        .col-6
-                                            a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
-                                                img(src='images/product2.png')
-                                                p.fs-17.text-black Điều hòa Inverter
+                                .pa-1.col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="3s")
+                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
+                                        img(src='images/product2.png')
+                                        p.fs-17.text-black Điều hòa Inverter
+                                .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="3.5s")
+                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
+                                        img(src='images/product2.png')
+                                        p.fs-17.text-black Điều hòa Inverter
+                                .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="4s")
+                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
+                                        img(src='images/product2.png')
+                                        p.fs-17.text-black Điều hòa Inverter
+                                .col-6.wow.fadeInUp(data-wow-duration="0.5s", data-wow-delay="4.5s")
+                                    a.d-flex.flex-column.justify-content-around.bg-gray.product-right(href='#')
+                                        img(src='images/product2.png')
+                                        p.fs-17.text-black Điều hòa Inverter
+            

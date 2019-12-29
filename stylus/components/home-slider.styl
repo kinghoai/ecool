@@ -1,4 +1,28 @@
 #home-slider
+    margin-bottom: 40px;
+    .slick-dots
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        list-style-type: none;
+        position: relative
+        bottom: 0px;
+        li
+            margin: 0 0.25rem;
+        button
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: 1px solid #000;
+            border-radius: 100%;
+            text-indent: -9999px;
+        li.slick-active button
+            border: none;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            border-radius: 0;
     .slider__item
         height 600px
         position relative
@@ -6,3 +30,10 @@
             position absolute
             width 50%
             top 30%
+    .slider__detail
+        margin-bottom 3rem
+        margin-top 3rem
+        p
+            margin-bottom 0px
+    .btn-outline-light:hover
+        background none
