@@ -1,20 +1,8 @@
 extends ../layouts/main.pug
 block content
     include ../partials/_slider_home.pug
-    section.portfolio
-        .container.container--924
-            h2.text-center.fs-24.font-weight-normal
-            .row
-                .col-4
-                    .portfolio__item
-                        img(src='images/portfolio.jpg')
-                        p.text-white.fs-19 Công nghệ hiện đại
-                .col-4
-                    .portfolio__item
-                        img(src='images/portfolio2.png')
-                        p.text-white.fs-19 Bền bỉ êm ái
-                .col-4
-                    .portfolio__item
-                        img(src='images/portfolio3.png')
-                        p.text-white.fs-19 Thuận theo thiên nhiên
-    section
+    include ../partials/_portfolio_home.pug
+    include ../partials/_product_tab_home.pug
+    include ../partials/_video_home.pug
+
+
