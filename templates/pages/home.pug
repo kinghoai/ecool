@@ -4,6 +4,26 @@ extends ../layouts/main.pug
 block content
     section.slider
         .slider__item
-            img(src='images/slide1.png')
+            img(src='images/slider1.png')
             .container
-                h2.text-white.fs-28 Điều hòa inverter
+                .text-center.slider__description
+                    h2.text-white.fs-28 Điều hòa inverter
+                    p.text-white.fs-17 Tiết kiệm điện tuyệt đối với Điều hòa wifi Ecool Điều khiển bằng app tiện dụng
+                    a.text-white.see-more Xem thêm
+    section.portfolio
+        .container.container--924
+            h2.text-center.fs-24.font-weight-normal
+            .row
+                .col-4
+                    .portfolio__item
+                        img(src='images/portfolio.jpg')
+                        p.text-white.fs-19 Công nghệ hiện đại
+                .col-4
+                    .portfolio__item
+                        img(src='images/portfolio2.png')
+                        p.text-white.fs-19 Bền bỉ êm ái
+                .col-4
+                    .portfolio__item
+                        img(src='images/portfolio3.png')
+                        p.text-white.fs-19 Thuận theo thiên nhiên
+    section
