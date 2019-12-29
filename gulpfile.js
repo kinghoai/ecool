@@ -15,12 +15,20 @@ gulp.task('dev', () => {
     })
     gulp.watch("./stylus/**/*.styl", styles).on('change', browserSync.reload);
     gulp.watch("./templates/**/*.pug", pages).on('change', browserSync.reload);
+    gulp.watch("./js/*", scripts).on('change', browserSync.reload);
 });
 
 function styles() {
+    gulp.src('./stylus/pages/*.styl')
+        .pipe(stylus())
+        .pipe(gulp.dest('./disk/css/pages'))
     return gulp.src('./stylus/main.styl')
         .pipe(stylus())
         .pipe(gulp.dest('./disk/css'))
+}
+function scripts() {
+    return gulp.src('./js/*.js')
+        .pipe(gulp.dest('./disk/js'))
 }
 
 function pages() {
@@ -42,3 +50,4 @@ function layouts() {
 exports.pages = pages;
 exports.layouts = layouts;
 exports.styles = styles;
+exports.scripts = scripts;
