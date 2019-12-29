@@ -14,7 +14,7 @@ gulp.task('dev', () => {
         notify: false
     })
     gulp.watch("./stylus/**/*.styl", styles).on('change', browserSync.reload);
-    gulp.watch("./templates/pages/*.pug", pages).on('change', browserSync.reload);
+    gulp.watch("./templates/**/*.pug", pages).on('change', browserSync.reload);
 });
 
 function styles() {
@@ -28,8 +28,17 @@ function pages() {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest('./disk'))
+        .pipe(gulp.dest('./disk/'))
+}
+
+function layouts() {
+    return gulp.src('./templates/layouts/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./disk/'))
 }
 
 exports.pages = pages;
+exports.layouts = layouts;
 exports.styles = styles;
