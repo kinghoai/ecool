@@ -10,6 +10,10 @@ $(document).ready(function() {
         dots: true,
         fade: true
     });
+    $('#home-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+        var $animatingElements = $('#home-slider .slider__item[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+        doAnimations($animatingElements);    
+    });
     function doAnimations(elements) {
         var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         elements.each(function() {
