@@ -25,4 +25,10 @@ $(document).ready(function() {
             });
         });
     }
+    $("#home-video-slider").slick({
+        centerMode: true,
+        centerPadding: '220px',
+        slidesToShow: 1,
+        variableWidth: false,
+    });
 });
