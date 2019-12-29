@@ -1,0 +1,28 @@
+$(document).ready(function() {
+    
+    $('#home-slider').on('init', function(e, slick) {
+        var $firstAnimatingElements = $('#home-slider .slider__item:first-child').find('[data-animation]');
+        doAnimations($firstAnimatingElements);
+    });
+    $("#home-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 10000,
+        dots: true,
+        fade: true
+    });
+    function doAnimations(elements) {
+        var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        elements.each(function() {
+            var $this = $(this);
+            var $animationDelay = $this.data('delay');
+            var $animationType = 'animated ' + $this.data('animation');
+            $this.css({
+                'animation-delay': $animationDelay,
+                '-webkit-animation-delay': $animationDelay
+            });
+            $this.addClass($animationType).one(animationEndEvents, function() {
+                $this.removeClass($animationType);
+            });
+        });
+    }
+});
