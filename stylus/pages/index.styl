@@ -22,20 +22,26 @@
     .col--product-left
         padding-bottom 20px
         a
-            height 100%
-            padding-top 40px
-            img
-                padding 0 40px
-            .detail
-                padding 0 80px
+            padding 0 43px 0
+            &:hover
+                text-decoration: none
                 p
-                    padding-bottom 0px
+                    color#2FBCEE
+            img
+                width 100%
+                object-fit: contain
     .product-right
         margin-bottom 20px
+        height 210px
         a
-            padding 20px
-            img,p
-                padding-top 20px
+            &:hover
+                text-decoration: none
+                p
+                    color#2FBCEE
+            padding-top 18px
+            img
+                object-fit: contain
+                padding 0 30px
     .btn-product-tab
         padding 0px 30px
         a
@@ -59,3 +65,23 @@
                 bottom: 0;
     .product-mini
         height 210px
+
+@media (min-width 992px)
+    .product-tab
+        ul.nav
+            padding-bottom 30px
+        .col--product-left
+            padding-bottom 20px
+            a
+                padding 0 43px 0
+                img
+                    width 100%
+                    object-fit: contain
+        .product-right
+            margin-bottom 20px
+            height 210px
+            a
+                padding-top 18px
+                img
+                    object-fit: contain
+                    padding 0 30px
