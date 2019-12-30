@@ -63,9 +63,6 @@
                 right: 15%;
                 width: 70%;
                 bottom: 0;
-    .product-mini
-        height 210px
-
 @media (min-width 992px)
     .product-tab
         ul.nav
@@ -74,6 +71,10 @@
             padding-bottom 20px
             a
                 padding 0 43px 0
+                &:hover
+                    text-decoration: none
+                    p
+                        color#2FBCEE
                 img
                     width 100%
                     object-fit: contain
@@ -81,7 +82,32 @@
             margin-bottom 20px
             height 210px
             a
+                &:hover
+                    text-decoration: none
+                    p
+                        color#2FBCEE
                 padding-top 18px
                 img
                     object-fit: contain
                     padding 0 30px
+        .btn-product-tab
+            padding 0px 30px
+            a
+                position: relative;
+                padding 0 0 20px 0
+                &:hover
+                    &:after
+                        border-bottom: 2px solid #2DBDEE;
+                        content: '';
+                        position: absolute;
+                        right: 15%;
+                        width: 70%;
+                        bottom: 0;
+            .active
+                &:after
+                    border-bottom: 2px solid #2DBDEE;
+                    content: '';
+                    position: absolute;
+                    right: 15%;
+                    width: 70%;
+                    bottom: 0;
