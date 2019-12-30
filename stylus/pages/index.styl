@@ -1,4 +1,5 @@
 @import "../components/home-slider.styl"
+@import "../components/home-news.styl"
 @import "../components/home-video-slider.styl"
 
 .section__title
@@ -6,6 +7,9 @@
 .portfolio
     margin-bottom 30px
     .portfolio__item
+        margin-bottom 20px
+        img
+            border-radius: 20px
         p
             bottom 0px
             left 0
@@ -13,21 +17,97 @@
             text-align center
             margin-bottom 5px
 .product-tab
-    padding-top 5rem
     ul.nav
         padding-bottom 30px
+    .col--product-left
+        padding-bottom 20px
+        a
+            padding 0 43px 0
+            &:hover
+                text-decoration: none
+                p
+                    color#2FBCEE
+            img
+                width 100%
+                object-fit: contain
+    .product-right
+        margin-bottom 20px
+        height 210px
+        a
+            &:hover
+                text-decoration: none
+                p
+                    color#2FBCEE
+            padding-top 18px
+            img
+                object-fit: contain
+                padding 0 30px
     .btn-product-tab
-        padding 10px 30px
+        padding 0px 30px
         a
             position: relative;
-            padding 0 0 30px 0
-        a:after
-            border-bottom: 2px solid #2DBDEE;
-            content: '';
-            position: absolute;
-            right: 0;
-            width: 30%;
-            bottom: 0;
-            margin: 0 auto;
-    .product-mini
-        height 210px
+            padding 0 0 20px 0
+            &:hover
+                &:after
+                    border-bottom: 2px solid #2DBDEE;
+                    content: '';
+                    position: absolute;
+                    right: 15%;
+                    width: 70%;
+                    bottom: 0;
+        .active
+            &:after
+                border-bottom: 2px solid #2DBDEE;
+                content: '';
+                position: absolute;
+                right: 15%;
+                width: 70%;
+                bottom: 0;
+@media (min-width 992px)
+    .product-tab
+        ul.nav
+            padding-bottom 30px
+        .col--product-left
+            padding-bottom 20px
+            a
+                padding 0 43px 0
+                &:hover
+                    text-decoration: none
+                    p
+                        color#2FBCEE
+                img
+                    width 100%
+                    object-fit: contain
+        .product-right
+            margin-bottom 20px
+            height 210px
+            a
+                &:hover
+                    text-decoration: none
+                    p
+                        color#2FBCEE
+                padding-top 18px
+                img
+                    object-fit: contain
+                    padding 0 30px
+        .btn-product-tab
+            padding 0px 30px
+            a
+                position: relative;
+                padding 0 0 20px 0
+                &:hover
+                    &:after
+                        border-bottom: 2px solid #2DBDEE;
+                        content: '';
+                        position: absolute;
+                        right: 15%;
+                        width: 70%;
+                        bottom: 0;
+            .active
+                &:after
+                    border-bottom: 2px solid #2DBDEE;
+                    content: '';
+                    position: absolute;
+                    right: 15%;
+                    width: 70%;
+                    bottom: 0;
