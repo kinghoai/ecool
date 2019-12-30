@@ -13,15 +13,32 @@
             text-align center
             margin-bottom 5px
 .product-tab
-    padding-top 5rem
+    padding-top 1rem
     ul.nav
         padding-bottom 30px
+    .col--product-left
+        padding-bottom 20px
+        a
+            height 100%
+            padding-top 40px
+            img
+                padding 0 40px
+            .detail
+                padding 0 80px
+                p
+                    padding-bottom 0px
+    .product-right
+        margin-bottom 20px
+        a
+            padding 20px
+            img,p
+                padding-top 20px
     .btn-product-tab
         padding 10px 30px
         a
             position: relative;
             padding 0 0 30px 0
-        a:after
+        &.active a:after
             border-bottom: 2px solid #2DBDEE;
             content: '';
             position: absolute;
