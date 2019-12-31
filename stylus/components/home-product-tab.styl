@@ -1,0 +1,105 @@
+.product-tab
+    margin-bottom: 100px
+    ul.nav
+        padding-bottom 39px
+    .btn-product-tab
+        padding 0px 10px 20px
+        a
+            position: relative;
+            padding 0 0 10px 0
+            &:hover
+                &:after
+                    border-bottom: 2px solid #2DBDEE;
+                    content: '';
+                    position: absolute;
+                    right: 15%;
+                    width: 70%;
+                    bottom: 0;
+        .active
+            &:after
+                border-bottom: 2px solid #2DBDEE;
+                content: '';
+                position: absolute;
+                right: 15%;
+                width: 70%;
+                bottom: 0;
+    .col--product-left
+        padding-bottom 20px
+        height 360px
+        a
+            padding 20px 43px 15px
+            &:hover
+                text-decoration: none
+                p
+                    color #2FBCEE
+            img
+                width 100%
+                object-fit contain
+                max-width 330px
+                margin 0 auto
+    .product-right
+        margin-bottom 20px
+        height 180px
+        a
+            &:hover
+                text-decoration: none
+                p
+                    color #2FBCEE
+            padding-top 18px
+            img
+                object-fit: contain
+                padding 0 30px
+@media (min-width 768px)
+    .product-tab
+        .col--product-left
+            height 430px
+@media (min-width 992px)
+    .product-tab
+        ul.nav
+            padding-bottom 39px
+        .btn-product-tab
+            padding 0px 30px
+            a
+                position: relative;
+                padding 0 0 20px 0
+                &:hover
+                    &:after
+                        border-bottom: 2px solid #2DBDEE;
+                        content: '';
+                        position: absolute;
+                        right: 15%;
+                        width: 70%;
+                        bottom: 0;
+            .active
+                &:after
+                    border-bottom: 2px solid #2DBDEE;
+                    content: '';
+                    position: absolute;
+                    right: 15%;
+                    width: 70%;
+                    bottom: 0;
+        .col--product-left
+            padding-bottom 20px
+            height 460px
+            a
+                padding 0 43px 0
+                &:hover
+                    text-decoration: none
+                    p
+                        color #2FBCEE
+                img
+                    width 100%
+                    object-fit: contain
+        .product-right
+            margin-bottom 20px
+            height 210px
+            a
+                &:hover
+                    text-decoration: none
+                    p
+                        color #2FBCEE
+                padding-top 18px
+                img
+                    object-fit: contain
+                    padding 0 30px
+        
