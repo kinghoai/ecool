@@ -14,6 +14,7 @@ html(lang='en')
     link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
     link(href='css/slick.css', rel='stylesheet', type='text/css')
     link(href='css/slick-theme.css', rel='stylesheet', type='text/css')
+    link(href='css/animate.min.css', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=vietnamese', rel='stylesheet')
     link(href='css/main.css', rel='stylesheet', type='text/css')
     link(href="https://www.w3schools.com/w3css/4/w3.css",rel="stylesheet",type='text/css')
@@ -57,13 +58,13 @@ html(lang='en')
       section.menu.bg-blue
         .container
           .row
-            .col
+            .col-6.col-lg-2
               .menu__logo
                 img(src='images/logo.png')
               p.text-white.fs-12.sologan-footer
                 | Mang thiên nhiên
                 | đến ngôi nhà bạn.
-            .col
+            .col-6.col-lg-2
               h5.menu__title.fs-14.text-white.font-weight-semi-bold
                 | Giới thiệu
               .menu__nav
@@ -71,7 +72,7 @@ html(lang='en')
                   | Về Sơn Hà
                 a.fs-12.d-block.text-white.item-footer(href='#')
                   | Về Ecool
-            .col
+            .col-6.col-lg-2
               h5.menu__title.fs-14.text-white.font-weight-semi-bold
                 | Sản phẩm
               .menu__nav
@@ -83,7 +84,7 @@ html(lang='en')
                   | Điều hòa 1 Chiều
                 a.fs-12.d-block.text-white.item-footer(href='#')
                   | Điều hòa 2 Chiều
-            .col
+            .col-6.col-lg-2
               h5.menu__title.fs-14.text-white.font-weight-semi-bold
                 | Hỗ trợ
               .menu__nav
@@ -93,7 +94,7 @@ html(lang='en')
                   | Tài liệu
                 a.fs-12.d-block.text-white.item-footer(href='#')
                   | Hệ thống đại lý
-            .col
+            .col-6.col-lg-2
               h5.menu__title.fs-14.text-white.font-weight-semi-bold
                 | Tin tức
               .menu__nav
@@ -105,10 +106,11 @@ html(lang='en')
                   | Chương trình ưu đãi
                 a.fs-12.d-block.text-white.item-footer(href='#')
                   | Video
-            .col
+            .col-6.col-lg-2
               h5.menu__title.fs-14.text-white.font-weight-semi-bold
                 | Liên hệ
           .language-footer
+            <img class="search" src="images/searchwhite.png">
             a.language(href='index.html')
               img(src='images/languege1.png')
             a.language(href='index.html')
@@ -128,7 +130,7 @@ html(lang='en')
     script(src='js/bootstrap.min.js')
     // == slick slide
     script(src='js/slick.js')
-  
+    script(src='js/wow.min.js')
     script(src='js/myscript.js')
     block scripts
     

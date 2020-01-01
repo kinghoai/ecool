@@ -1,28 +1,45 @@
 @media (min-width: 320px)
+    .col--home-product
+        flex: 0 0 50%;
+        max-width: 50%;
     .img-banner-product
         margin-top 30px
     .product-card
         margin-top 60px
         margin-bottom 50px
+        &:hover
+            text-decoration: none
+            .btn--detail
+                color white
+                background-color #30BCEE
+        img
+            margin-bottom: 20px
     .btn--detail
-        padding 10px 20px 10px 20px;
+        padding 6px 20px;
         border 2px solid #30BCEE;
         border-radius 25px
         font-size 14px
-        &:hover
-            color white
-            background-color #30BCEE
 @media (min-width: 992px)
+    .col--home-product
+        flex: 0 0 20%;
+        max-width: 20%;
     .img-banner-product
         margin-top 70px
     .product-card
         margin-top 130px
-        margin-bottom 150px
+        margin-bottom 120px
+        img
+            margin-bottom 60px
     .btn--detail
-        padding 10px 20px 10px 20px;
         border 2px solid #30BCEE;
         border-radius 25px
         font-size 14px
-        &:hover
-            color white
-            background-color #30BCEE
+@media (min-width 1200px)
+    .col--home-product
+        padding-left: 24px
+        padding-right: 24px
+    .product
+        .container
+            .row
+                margin-left: -24px
+                margin-right: -24px
