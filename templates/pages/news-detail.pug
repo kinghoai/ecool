@@ -3,7 +3,16 @@ extends ../layouts/main.pug
 
 block content
     .container 
-         p Home /  Tin tức  /  Góc tư vấn  /  ECool wifi và lưu ý sử dụng 
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/home.html') Home
+                li.breadcrumb-item
+                    a(href='/home.html') Tin tức
+                li.breadcrumb-item
+                    a(href='/home.html') Góc tư vấn
+                li.breadcrumb-item.active(aria-current='page')
+                    a(href='#') ECool wifi và lưu ý sử dụng
     .container.container--768
         .row
             .col-12.text-center.news-title

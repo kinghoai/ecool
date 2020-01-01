@@ -1,6 +1,7 @@
 @import "../components/home-slider.styl"
 @import "../components/home-news.styl"
 @import "../components/home-video-slider.styl"
+@import "../components/home-product-tab.styl"
 
 .section__title
     margin-bottom 2rem
@@ -16,99 +17,7 @@
             right 0
             text-align center
             margin-bottom 5px
-.product-tab
-    margin-bottom: 100px
-    ul.nav
-        padding-bottom 39px
-    .col--product-left
-        padding-bottom 20px
-        a
-            padding 0 43px 0
-            &:hover
-                text-decoration: none
-                p
-                    color#2FBCEE
-            img
-                width 100%
-                object-fit: contain
-    .product-right
-        margin-bottom 20px
-        height 210px
-        a
-            &:hover
-                text-decoration: none
-                p
-                    color#2FBCEE
-            padding-top 18px
-            img
-                object-fit: contain
-                padding 0 30px
-    .btn-product-tab
-        padding 0px 30px
-        a
-            position: relative;
-            padding 0 0 20px 0
-            &:hover
-                &:after
-                    border-bottom: 2px solid #2DBDEE;
-                    content: '';
-                    position: absolute;
-                    right: 15%;
-                    width: 70%;
-                    bottom: 0;
-        .active
-            &:after
-                border-bottom: 2px solid #2DBDEE;
-                content: '';
-                position: absolute;
-                right: 15%;
-                width: 70%;
-                bottom: 0;
-@media (min-width 992px)
-    .product-tab
-        ul.nav
-            padding-bottom 39px
-        .col--product-left
-            padding-bottom 20px
-            a
-                padding 0 43px 0
-                &:hover
-                    text-decoration: none
-                    p
-                        color#2FBCEE
-                img
-                    width 100%
-                    object-fit: contain
-        .product-right
-            margin-bottom 20px
-            height 210px
-            a
-                &:hover
-                    text-decoration: none
-                    p
-                        color#2FBCEE
-                padding-top 18px
-                img
-                    object-fit: contain
-                    padding 0 30px
-        .btn-product-tab
-            padding 0px 30px
-            a
-                position: relative;
-                padding 0 0 20px 0
-                &:hover
-                    &:after
-                        border-bottom: 2px solid #2DBDEE;
-                        content: '';
-                        position: absolute;
-                        right: 15%;
-                        width: 70%;
-                        bottom: 0;
-            .active
-                &:after
-                    border-bottom: 2px solid #2DBDEE;
-                    content: '';
-                    position: absolute;
-                    right: 15%;
-                    width: 70%;
-                    bottom: 0;
+@media (min-width 1200px)
+    .video
+        .slick-list
+            padding:0 350px !important;

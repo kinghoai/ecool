@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     new WOW().init();
     $('#home-slider').on('init', function(e, slick) {
@@ -7,9 +6,10 @@ $(document).ready(function() {
     });
     $("#home-slider").slick({
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 5000,
         dots: true,
-        fade: true
+        fade: true,
+        arrows: false
     });
     $('#home-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
         var $animatingElements = $('#home-slider .slider__item[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
@@ -32,11 +32,10 @@ $(document).ready(function() {
     }
     $("#home-video-slider").slick({
         centerMode: true,
-        centerPadding: '460px',
         slidesToShow: 1,
         dots: true,
-        speed: 400,
+        speed: 500,
+        arrows: false,
         fade: false,
-        slide: 'div',
     });
 });
