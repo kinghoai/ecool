@@ -38,4 +38,20 @@ $(document).ready(function() {
         arrows: false,
         fade: false,
     });
+    $('.product-thumbnails').slick({
+        dots: false,
+        vertical: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        verticalSwiping: true,
+        centerMode: true,
+        asNavFor: ".product-gallery"
+      });
+
+      $(".product-gallery").slick({
+        autoplay: false,
+        arrows: false,
+        asNavFor: ".product-thumbnails"
+      });
 });
