@@ -1,35 +1,40 @@
 #home-slider
-    margin-bottom: 40px;
+    margin-bottom: 40px
     .slick-dots
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 1rem 0;
-        list-style-type: none;
+        display: flex
+        justify-content: center
+        margin: 0
+        padding: 1rem 0
+        list-style-type: none
         position: relative
-        bottom: 0px;
+        bottom: 0px
         li
-            margin: 0 0.25rem;
+            margin: 0 0.25rem
         button
-            display: block;
-            width: 10px;
-            height: 10px;
-            padding: 0;
-            border: 1px solid #000;
-            border-radius: 100%;
-            text-indent: -9999px;
+            display: block
+            width: 10px
+            height: 10px
+            padding: 0
+            border: 1px solid #000
+            border-radius: 100%
+            text-indent: -9999px
         li.slick-active button
-            border: none;
-            border-left: 1px solid #000;
-            border-right: 1px solid #000;
-            border-radius: 0;
+            border: none
+            border-left: 1px solid #000
+            border-right: 1px solid #000
+            border-radius: 0
     .slider__item
-        height 600px
+        height 530px
         position relative
-        .slider__item__content_1
+        background-size: auto 100%;
+        background-position: right;
+        background-repeat: no-repeat
+        margin-bottom: 20px
+        .slider__description
             position absolute
             width 50%
-            top 30%
+            max-width 357px
+            top 29%
     .slider__detail
         margin-bottom 3rem
         margin-top 3rem
@@ -37,3 +42,10 @@
             margin-bottom 0px
     .btn-outline-light:hover
         background none
+    .see-more
+        border-radius: 20px
+        padding 5px 20px
+@media (min-width: 992px)
+    #home-slider
+        .slider__item
+            background-size: 100% 100%;
