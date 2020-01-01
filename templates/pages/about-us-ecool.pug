@@ -1,8 +1,16 @@
 extends ../layouts/main.pug
 
 block content
+    .container
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/home.html') Home
+                li.breadcrumb-item
+                    a(href='/home.html') Giới thiệu
+                li.breadcrumb-item.active(aria-current='page')
+                    a(href='#') Về Ecool
     .container.container--1020
-        p Home  /  Giới thiệu  / Về Ecool
         h1.text-center.title-about-ecool Giới thiệu về Ecool
         .row
             .col-md-12

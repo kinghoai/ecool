@@ -3,9 +3,12 @@ extends ../layouts/main.pug
 
 block content
     .container
-        .row
-            col-12
-                p Home / Liên hệ
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/home.html') Home
+                li.breadcrumb-item.active(aria-current='page')
+                    a(href='#') Liên hệ
         h1.text-center.fs-60 Liên hệ eCool
         .row
             .col-12.company-info
