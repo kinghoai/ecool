@@ -1,0 +1,82 @@
+extends ../layouts/main.pug
+
+
+block content
+    .container 
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/home.html') Home
+                li.breadcrumb-item
+                    a(href='/home.html') Sản phẩm
+                li.breadcrumb-item
+                    a(href='/home.html') Điều hoà inventer
+                li.breadcrumb-item.active(aria-current='page')
+                    a(href='#') Điều hoà inventer INV 3789
+    main.main
+        .shop-container.container.container--924
+            .product
+                .product-main
+                    .row
+                        .col-8.product-image
+                            .row
+                                .col-2
+                                    .product-thumbnails
+                                        a.text-center
+                                            img(src="images/product_detail/ic-08.png")
+                                        a.text-center
+                                            img(src="images/product_detail/ic-09.png")
+                                        a.text-center
+                                            img(src="images/product_detail/ic-10.png")
+                                        a.text-center
+                                            img(src="images/product_detail/ic-11.png")
+                                .col-10
+                                    .product-gallery
+                                        .slide-item
+                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                        
+                        .col-4.product-info
+                            h1.product-title Điều hòa eCool INTERTER INV3789
+                            .product-short-description
+                                ul
+                                    li Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                                    li Sed diam nonummy nibh euismod tincidunt ut laoreet
+                                    li Dolore magna aliquam erat volutpat
+                            .variations
+                                .variations__item
+                                    label Công suất
+                                    .value
+                            .price-wrapper
+                                p.product-btn.price.product-page-price
+                                    span.amount 6.850.000 đ
+                            .product-contact
+                                p.product-btn Liên hệ
+                            .product-map
+                                span Mua ở đâu
+                .product-footer
+                    .product-tabs
+                        ul#myTab.nav.nav-tabs(role='tablist')
+                            li.nav-item
+                                a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Giới thiệu
+                            li.nav-item
+                                a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Thông số kỹ thuật
+                            li.nav-item
+                                a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Tính năng ưu việt
+                            li.nav-item
+                                a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Chứng nhận chất lượng
+                            li.nav-item
+                                a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Hỗ trợ
+                        #myTabContent.tab-content
+                            #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') ...
+                            #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') ...
+
+                    .product-upsells
+                        h3.product-section-title.uppercase Các sản phẩm đã xem
