@@ -1,3 +1,4 @@
 node_modules
 disk
 .idea
+.DS_Store

@@ -1,0 +1,24 @@
+extends ../layouts/main.pug
+block styles
+    link(href='css/pages/supports.css', rel='stylesheet', type='text/css')
+block content
+    .page-support
+        .header.container
+            nav.fs-10.font-weight-light(aria-label='breadcrumb')
+                ol.breadcrumb
+                    li.breadcrumb-item
+                        a(href='/home.html') Home
+                    li.breadcrumb-item.active(aria-current='page')
+                        a(href='#') Hỗ trợ
+        main.main
+            .container
+                .banner(style="background-image:url('./images/support/ic-29.png')")
+                    .banner__content
+                        h3 Chúng tôi có thể hỗ trợ gì cho bạn?
+                        .input-group.form-sm.pt-3
+                            input.form-control.my-0.py-1.lime-border(type='text', placeholder='Search', aria-label='Search')
+                            .input-group-append
+                                span.input-group-text.lime.lighten-2
+                                i.fas.fa-search.text-grey(aria-hidden='true')
+                        span Tại sao điều hòa không lạnh?
+                            
