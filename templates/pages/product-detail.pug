@@ -14,7 +14,7 @@ block content
                 li.breadcrumb-item.active(aria-current='page')
                     a(href='#') Điều hoà inventer INV 3789
     main.main
-        .shop-container.container.container--924
+        .shop-container.container
             .product
                 .product-main
                     .row
@@ -33,18 +33,19 @@ block content
                                 .col-10
                                     .product-gallery
                                         .slide-item
-                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                            img(src='images/product_detail/ic-07.png')
                                         .slide-item
-                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                            img(src='images/product_detail/ic-07.png')
                                         .slide-item
-                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                            img(src='images/product_detail/ic-07.png')
                                         .slide-item
-                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                            img(src='images/product_detail/ic-07.png')
                                         .slide-item
-                                            img(src='images/product_detail/ic-07.png', alt='画像')
+                                            img(src='images/product_detail/ic-07.png')
                                         
                         .col-4.product-info
                             h1.product-title Điều hòa eCool INTERTER INV3789
+                            p.sku INV3789
                             .product-short-description
                                 ul
                                     li Lorem ipsum dolor sit amet, consectetuer adipiscing elit
@@ -54,16 +55,16 @@ block content
                                 .variations__item
                                     label Công suất
                                     .value
-                            .price-wrapper
-                                p.product-btn.price.product-page-price
+                            .price-wrapper.mt-5.mb-3
+                                a.product-btn.price
                                     span.amount 6.850.000 đ
                             .product-contact
-                                p.product-btn Liên hệ
-                            .product-map
+                                a.product-btn Liên hệ
+                            .product-map.mt-5.text-center
                                 span Mua ở đâu
                 .product-footer
                     .product-tabs
-                        ul#myTab.nav.nav-tabs(role='tablist')
+                        ul#myTab.nav.nav-tabs.d-flex.justify-content-between(role='tablist')
                             li.nav-item
                                 a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Giới thiệu
                             li.nav-item
@@ -75,7 +76,57 @@ block content
                             li.nav-item
                                 a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Hỗ trợ
                         #myTabContent.tab-content
-                            #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') ...
+                            #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+                                h2.product-title Điều hòa eCool INTERTER INV3789
+                                p.sku INV3789
+                                div 
+                                    p   Giữ cho không khí trong lành và sạch khuẩn với hệ thống Màng Lọc Nhiều Lớp. Màng lọc Than Hoạt Tính giúp khử mùi và loại bỏ nhanh chóng các khí độc hại*. Lớp lọc HEPA có khả năng lọc đến 99.97% hạt bụi siêu mịn** và diệt vi khuẩn*** trong không khí.
+                                .row.mt-5.mb-5
+                                    .col-sm
+                                        img(src="images/product_detail/ic-12.png")
+                                        h3.mt-4 Công nghệ hiện đại
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                    .col-sm
+                                        img(src="images/product_detail/ic-13.png")
+                                        h3.mt-4 Thân thiện môi trường
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                    .col-sm
+                                        img(src="images/product_detail/ic-14.png")
+                                        h3.mt-4 Điều khiển bằng app
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                .slide.mt-5.pt-5
+                                    .slide-featured-product
+                                        .slide-item
+                                            img(src='images/product_detail/ic-15.png')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-15.png')
+                                    .slide-featured-product-thumbnails.mt-3
+                                        .slide-item
+                                            img(src='images/product_detail/ic-16.png')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-17.png')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-18.png')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-19.png')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-20.png')
+                                        .slide-item
+                                            img(src='images/product_detail/ic-21.png')
+                                .product-attribute-specs-table
+                                    h3 Thông số kỹ thuật
+                                    .row
+                                        .item-spect.bd-right.col
+                                            h4.highlight 39m2
+                                            span Dung tích (m2)
+                                        .item-spect.bd-right.col
+                                            h4.highlight 45 dBA
+                                            span Độ ồn (dBA)
+                                        .item-spect.col-6
+                                            h4.highlight 361 x 481 x 236 mm
+                                            span Kích thước thực tế (mm x mm x mm)
+                                    div.text-center.pt-5
+                                        a.btn-showmore Hiển thị tất cả thông số kỹ thuật
                             #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') ...
 
                     .product-upsells
