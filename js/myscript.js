@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     new WOW().init();
-    $('#home-slider').on('init', function(e, slick) {
+    $('#home-slider').on('init', function (e, slick) {
         var $firstAnimatingElements = $('#home-slider .slider__item:first-child').find('[data-animation]');
         doAnimations($firstAnimatingElements);
     });
@@ -11,13 +11,13 @@ $(document).ready(function() {
         fade: true,
         arrows: false
     });
-    $('#home-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+    $('#home-slider').on('beforeChange', function (e, slick, currentSlide, nextSlide) {
         var $animatingElements = $('#home-slider .slider__item[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-        doAnimations($animatingElements);    
+        doAnimations($animatingElements);
     });
     function doAnimations(elements) {
         var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        elements.each(function() {
+        elements.each(function () {
             var $this = $(this);
             var $animationDelay = $this.data('delay');
             var $animationType = 'animated ' + $this.data('animation');
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 'animation-delay': $animationDelay,
                 '-webkit-animation-delay': $animationDelay
             });
-            $this.addClass($animationType).one(animationEndEvents, function() {
+            $this.addClass($animationType).one(animationEndEvents, function () {
                 $this.removeClass($animationType);
             });
         });
@@ -49,9 +49,9 @@ $(document).ready(function() {
         verticalSwiping: true,
         centerMode: true,
         asNavFor: ".product-gallery"
-      });
+    });
 
-      $(".product-gallery").slick({
+    $(".product-gallery").slick({
         autoplay: false,
         arrows: false,
         asNavFor: ".product-thumbnails"
@@ -82,5 +82,22 @@ $(document).ready(function() {
                 }
             },
         ]
+    });
+    });
+
+    $('.slide-featured-product-thumbnails').slick({
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        arrows: true,
+        centerMode: true,
+        asNavFor: ".slide-featured-product"
+    });
+
+    $(".slide-featured-product").slick({
+        autoplay: false,
+        arrows: false,
+        asNavFor: ".slide-featured-product-thumbnails"
     });
 });
