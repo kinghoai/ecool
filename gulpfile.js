@@ -13,6 +13,7 @@ gulp.task('dev', () => {
         },
         notify: false
     })
+    gulp.watch("./images/**/*", images)
     gulp.watch("./stylus/**/*.styl", styles).on('change', browserSync.reload);
     gulp.watch("./templates/**/*.pug", pages).on('change', browserSync.reload);
     gulp.watch("./js/*", scripts).on('change', browserSync.reload);
@@ -26,9 +27,16 @@ function styles() {
         .pipe(stylus())
         .pipe(gulp.dest('./disk/css'))
 }
+
 function scripts() {
     return gulp.src('./js/*.js')
         .pipe(gulp.dest('./disk/js'))
+}
+
+
+function images() {
+    return gulp.src('./images/**/*')
+        .pipe(gulp.dest('./disk/images'))
 }
 
 function pages() {
@@ -51,3 +59,4 @@ exports.pages = pages;
 exports.layouts = layouts;
 exports.styles = styles;
 exports.scripts = scripts;
+exports.images = images;
