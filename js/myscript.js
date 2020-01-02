@@ -53,6 +53,33 @@ $(document).ready(function () {
         autoplay: false,
         arrows: false,
         asNavFor: ".product-thumbnails"
+      });
+
+      
+    $("#slides-sonha").slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        asNavFor: '#slides-sonha-item',
+    });
+    $("#slides-sonha-item").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        autoplay: true,
+        arrows: true,
+        asNavFor: '#slides-sonha',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false
+                }
+            },
+        ]
     });
 
     $('.slide-featured-product-thumbnails').slick({
