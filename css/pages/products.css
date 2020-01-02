@@ -1,0 +1,180 @@
+.ecool-product .products__description {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.ecool-product .products-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.ecool-product .products__list {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.ecool-product .products__list .col-6.col-lg-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.ecool-product .products__list .col-6.col-lg-3 .item-product {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.ecool-product .products__list .col-6.col-lg-3 .item-product .item-product__img {
+  max-width: 52%;
+  margin: 0 auto 55px;
+}
+.ecool-product .products__list .col-6.col-lg-3 .item-product .item-product__content {
+  margin-bottom: 30px;
+}
+.ecool-product .products__list .col-6.col-lg-3 .item-product .btn--product {
+  padding: 5px 12px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.ecool-product .my-services {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.ecool-product .service-items {
+  margin-bottom: 40px;
+}
+.ecool-product .service-items .service-item {
+  max-width: 204px;
+  margin: 0 auto 20px;
+}
+.ecool-product .service-items .img-service {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.ecool-product .service-items p {
+  line-height: 18px;
+}
+.ecool-product .service-items a {
+  color: #08649c;
+}
+.ecool-product .service-banner {
+  margin-bottom: 50px;
+}
+.ecool-product .ecool-app {
+  padding-top: 136px;
+  padding-bottom: 136px;
+}
+.ecool-product .ecool-app .ecool-app__content {
+  width: 320px;
+  margin: 0 auto;
+}
+.ecool-product .ecool-app .ecool-app__content h2 {
+  letter-spacing: 3px;
+}
+.ecool-product .ecool-app .ecool-app__content a {
+  color: #08649c;
+  margin-top: 25px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.ecool-product .ecool-app .ecool-app__img {
+  border-radius: 8px;
+  width: calc(50% - 10px) !important;
+  max-width: 191px;
+  -webkit-box-shadow: 3px 7px 7px 0px rgba(0,37,68,0.2);
+  -moz-box-shadow: 3px 7px 7px 0px rgba(0,37,68,0.2);
+  box-shadow: 3px 7px 7px 0px rgba(0,37,68,0.2);
+}
+.ecool-product .ecool-app .ecool-app__img--left {
+  margin-right: 20px;
+}
+.ecool-product .using {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.ecool-product .using h2 {
+  margin-bottom: 25px;
+}
+@media (min-width: 992px) {
+  .ecool-product .products-title {
+    margin-top: 70px;
+    margin-bottom: 63px;
+  }
+  .ecool-product .my-services {
+    margin-bottom: 50px;
+    margin-top: 70px;
+  }
+  .ecool-product .service-items {
+    margin-bottom: 80px;
+  }
+  .ecool-product .service-banner {
+    margin-bottom: 80px;
+  }
+  .ecool-product .using {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .ecool-product .using h2 {
+    margin-bottom: 50px;
+  }
+}
+.item-service-products {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.name-service-products {
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .title-products {
+    margin-bottom: 40px;
+  }
+}
+.description-products {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.images-products {
+  margin-bottom: 80px;
+}
+.img-item-product {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.item-des {
+  margin-bottom: 60px;
+}
+.btn--product {
+  font-size: 16px;
+  border: 2px solid #808080;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.item-product {
+  background-color: #f7f8fa;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.link-products-list {
+  margin-bottom: 60px;
+}
+.title-service {
+  margin-bottom: 80px;
+}
+.title-service .img-service {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.title-service .service-item {
+  margin-bottom: 80px;
+}
+.title-service .application {
+  margin-bottom: 80px;
+  background-color: #f7f8fa;
+}
+.title-service .title-using {
+  margin-bottom: 80px;
+}
+.title-service .using {
+  margin-bottom: 100px;
+}

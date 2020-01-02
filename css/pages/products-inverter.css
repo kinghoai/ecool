@@ -1,0 +1,139 @@
+.product-box .option-box {
+  font-size: 12px;
+}
+@media (min-width: 320px) {
+  .product-inverter .btn-search-system {
+    position: absolute;
+    left: 20px;
+    background: transparent;
+    width: 34px;
+    top: 20%;
+  }
+  .product-inverter .input-search-system {
+    padding-left: 80px;
+  }
+  .product-inverter .input-search-system::placeholder {
+    font-size: 10px;
+  }
+  .product-inverter .begin-products-list {
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .product-inverter .begin-products-list .products-list-content {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .product-inverter .inverter {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #f7f8fa;
+    padding: 50px;
+  }
+  .product-inverter .background-color {
+    background-color: #f7f8fa;
+    margin-bottom: 50px;
+    border-bottom: 20px solid #f7f8fa;
+  }
+  .product-inverter .begin-products-list {
+    background-color: #fff;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .product-inverter .begin-products-list .products-list-content {
+    text-align: left;
+  }
+  .product-inverter .products-list-info {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .product-inverter .info-product {
+    border-bottom: 1px solid #808080;
+    margin-bottom: 20px;
+  }
+  .product-inverter .multiple-product {
+    border: 2px solid #808080;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .product-inverter .see-more-product {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .product-inverter .news {
+    padding-top: 30px;
+  }
+  .product-inverter .news h2 {
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .product-inverter .news .news__banner {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .product-inverter .news .news__banner .label {
+    width: 122px;
+    position: absolute;
+    background-size: 100% 100%;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    left: 15px;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .product-inverter .news .news__text {
+    margin-bottom: 30px;
+  }
+  .product-inverter .news .arrow {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+  }
+  .product-inverter .news .arrow img {
+    width: 7px;
+  }
+  .product-inverter .news .arrow .arrow__left {
+    width: 7px;
+    padding: 5px 11px;
+    border: 1px solid #000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .product-inverter .news .arrow .arrow__right {
+    width: 7px;
+    padding: 5px 11px;
+    border: 1px solid #000;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .product-inverter .news .news__viewall {
+    margin-top: 50px;
+  }
+  .product-inverter .news .news__viewall a {
+    color: #08649c;
+  }
+  .product-inverter .news .news__viewall a:hover {
+    text-decoration: none;
+  }
+  .product-inverter .news .news__viewall a img {
+    width: 16px;
+    margin-left: 20px;
+  }
+  .product-inverter .product-highlight {
+    border-top: 2px solid #808080;
+  }
+  .product-inverter .products-seen {
+    border-top: 1px solid #808080;
+    margin-top: 40px;
+  }
+  .product-inverter .products-seen .img-item-product {
+    width: 80%;
+  }
+  .product-inverter .title-products-seen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
