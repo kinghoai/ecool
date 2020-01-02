@@ -13,13 +13,16 @@ gulp.task('dev', () => {
         },
         notify: false
     })
-    gulp.watch("./images/**/*", images)
+    gulp.watch("./images/**/*", images).on('change', browserSync.reload);
+    gulp.watch("./css/**/*", styles).on('change', browserSync.reload);
     gulp.watch("./stylus/**/*.styl", styles).on('change', browserSync.reload);
     gulp.watch("./templates/**/*.pug", pages).on('change', browserSync.reload);
     gulp.watch("./js/*", scripts).on('change', browserSync.reload);
 });
 
 function styles() {
+    gulp.src('./css/**/*')
+        .pipe(gulp.dest('./disk/css'))
     gulp.src('./stylus/pages/*.styl')
         .pipe(stylus())
         .pipe(gulp.dest('./disk/css/pages'))
