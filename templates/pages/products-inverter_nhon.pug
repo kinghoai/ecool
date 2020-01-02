@@ -1,0 +1,56 @@
+extends ../layouts/main.pug
+block styles
+    link(rel='stylesheet', href='css/pages/products-inverter.css')
+block content
+    include ../mixins/select.pug
+    include ../mixins/product_item_style_1.pug
+    .container
+        section.feature-image
+        .search-container
+            form(action='#')
+                input(type='text', placeholder='Search..', name='search')
+                button(type='submit')
+                i.fa.fa-search
+
+    .container
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/home.html') Home
+                li.breadcrumb-item.active(aria-current='page')
+                    a(href='#') Sản phẩm
+    .container.container--1020
+        .header-content
+            h1.text-center ĐIỀU HÒA INVERTER ECOOL
+            .header-content__detail
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        
+        .product-box
+            .option-box-wrap
+                .option-box.d-flex.justify-content-between.bd-highlight.mb-3
+                    .p-2.bd-highlight
+                        | 9 kết quả
+                    .p-2.bd-highlight.d-flex.justify-content-between
+                        +SelectBox('Giá', [
+                            {name: 'Giá', value: '1'}, 
+                            ])
+                        +SelectBox('Công suất', [
+                            {name: 'Công suất', value: '1'}, 
+                            ])
+                        +SelectBox('Khác', [
+                            {name: 'Khác', value: '1'}, 
+                            ])
+                    .p-2.bd-highlight
+                        +SelectBox('Sắp xếp theo', [
+                            {name: 'Sắp xếp theo', value: '2'}, 
+                            ])
+            .product-list
+                
+                each val in [1, 2, 3]
+                    .row
+                        +Product_item_style_1('Điều hoà Ecool INV2378','6.580.000đ')
+                        +Product_item_style_1('Điều hoà Ecool INV2689', '7.260.000đ')
+                        +Product_item_style_1('Điều hoà Ecool INV1456', '10.680.000đ')
+            .product-viewmore.text-center
+                a.btn.btn-viewmorde.p-2 Xem nhiều sản phẩm hơn
+

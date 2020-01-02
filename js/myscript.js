@@ -37,5 +37,50 @@ $(document).ready(function() {
         speed: 500,
         arrows: false,
         fade: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
+    $('.product-thumbnails').slick({
+        dots: false,
+        vertical: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        verticalSwiping: true,
+        centerMode: true,
+        asNavFor: ".product-gallery"
+      });
+
+      $(".product-gallery").slick({
+        autoplay: false,
+        arrows: false,
+        asNavFor: ".product-thumbnails"
+      });
+
+      
+    $("#slides-sonha").slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        asNavFor: '#slides-sonha-item',
+    });
+    $("#slides-sonha-item").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        autoplay: true,
+        arrows: true,
+        asNavFor: '#slides-sonha',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false
+                }
+            },
+        ]
     });
 });
