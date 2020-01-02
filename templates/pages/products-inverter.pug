@@ -4,21 +4,22 @@ block styles
 block content
     include ../mixins/select.pug
     include ../mixins/product_item_style_1.pug
-    .container
-        section.feature-image
-        .search-container
-            form(action='#')
-                input(type='text', placeholder='Search..', name='search')
-                button(type='submit')
-                i.fa.fa-search
-
-    .container
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb
-                li.breadcrumb-item
-                    a(href='/home.html') Home
-                li.breadcrumb-item.active(aria-current='page')
-                    a(href='#') Sản phẩm
+    .background-color
+        .container
+            .row.begin-products-list
+                    .col-lg-6.col-12.text-center
+                        img(src="images/product3.png", alt="")
+                    .col-lg-6.col-12.text-center
+                        h1.text-center INVERTER
+                        h1.text-center Tiết kiệm điện tiêu chuẩn châu Âu
+    .container.container--1020
+        .row
+            .col-12
+                form.form-search-system.text-center(action="#")
+                input.input-search-system.form-group.border-form-system.form-control(type='text', placeholder='Tìm điều hòa')
+                button.btn-search-system(type='submit')
+                    img.img-btn-search(src='images/search.png')
+            p.bread-crumb  Home  /  Sản phẩm   /    Điều hòa Inverter
     .container.container--1020
         .header-content
             h1.text-center ĐIỀU HÒA INVERTER ECOOL
@@ -53,4 +54,25 @@ block content
                         +Product_item_style_1('Điều hoà Ecool INV1456', '10.680.000đ')
             .product-viewmore.text-center
                 a.btn.btn-viewmorde.p-2 Xem nhiều sản phẩm hơn
+    include ../partials/_news_home.pug
+    .container.container--1020.products-seen
+        .row
+            .col-12.text-center.title-products-seen
+                h1.text-center CÁC SẢN PHẨM ĐÃ XEM
+        .row.products
+            .col-4.item-product
+                img.img-item-product(src="images/product.png", alt="") 
+                .text-center
+                    h5.text-center Điều hòa inverter
+                    strong.text-center.item-des  3.260.000đ
+            .col-4.item-product
+                img.img-item-product(src="images/product.png", alt="") 
+                .text-center
+                    h5.text-center Điều hòa inverter
+                    strong.text-center.item-des  3.260.000đ
+            .col-4.item-product
+                img.img-item-product(src="images/product.png", alt="") 
+                .text-center
+                    h5.text-center Điều hòa inverter
+                    strong.text-center.item-des  3.260.000đ
 
