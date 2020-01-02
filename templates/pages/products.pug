@@ -1,96 +1,110 @@
 extends ../layouts/main.pug
 
 block content
-    .container
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb
-                li.breadcrumb-item
-                    a(href='/home.html') Home
-                li.breadcrumb-item.active(aria-current='page')
-                    a(href='#') Sản phẩm
-    .container.container--1020
-        .row
-            .col-12 
-                h1.title-products.text-center ĐIỀU HÒA ECOOL
-                p.description-products Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-            .col-12.images-products
-                img(src="images/products.png", alt="")
-
-        .row.link-products-list
-            .col-12
-                 h1.text-center.products-title LỰA CHỌN MÁY ĐIỀU HÒA
-            .col-12.text-center
-                a.text-center(href="#") XEM TẤT CẢ MÁY ĐIỀU HÒA >
-        .row.products
-            .col-3.item-product
-                img.img-item-product(src="images/product.png", alt="") 
-                .text-center
-                    h5.text-center Điều hòa inverter
-                    p.text-center.item-des  Điều hòa tiết kiệm điện
-                    a.text-center(href="#")
-                        .btn.btn--product.fs-12 Chi tiết sản phẩm
-            .col-3.item-product
-                img.img-item-product(src="images/product.png", alt="") 
-                .text-center
-                    h5.text-center Điều hòa inverter
-                    p.text-center.item-des  Điều hòa tiết kiệm điện
-                    a.text-center(href="#")
-                        .btn.btn--product.fs-12 Chi tiết sản phẩm
-            .col-3.item-product
-                img.img-item-product(src="images/product.png", alt="") 
-                .text-center
-                    h5.text-center Điều hòa inverter
-                    p.text-center.item-des  Điều hòa tiết kiệm điện
-                    a.text-center(href="#")
-                        .btn.btn--product.fs-12 Chi tiết sản phẩm
-            .col-3.item-product
-                img.img-item-product(src="images/product.png", alt="") 
-                .text-center
-                    h5.text-center Điều hòa inverter
-                    p.text-center.item-des  Điều hòa tiết kiệm điện
-                    a.text-center(href="#")
-                        .btn.btn--product.fs-12 Chi tiết sản phẩm
-        .row.my-services
-            .col-12.text-center.title-service
-                h1.text-center DỊCH VỤ CỦA CHÚNG TÔI
-                h5.text-center Cảm kết lắp đặt, bảo hành
-        .row.service-item
-            .col-4.text-center
-                img.img-service(src="images/service-1.png", alt="")
-                h5.text-center Tài chính
-                p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry.ever since the 1500s.
-                a.text-center(href="#") Chi tiết
-            .col-4.text-center
-                img.img-service(src="images/service-2.png", alt="")
-                h5.text-center Tài chính
-                p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry.ever since the 1500s.
-                a.text-center(href="#") Chi tiết
-            .col-4.text-center
-                img.img-service(src="images/service-3.png", alt="")
-                h5.text-center Tài chính
-                p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry.ever since the 1500s.
-                a.text-center(href="#") Chi tiết
-        .row.application
-            .col-6.text-center
-                h2.text-center ỨNG DỤNG ĐIỀU KHIỂN WIFI
-                h1.text-center ECOOL APP
-                p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                a(href="#") Tìm hiểu thêm
-            .col-3
-                img(src="images/application-2.png", alt="")
-            .col-3
-                img(src="images/application-1.png", alt="")
-        .row.using
-            .col-12.text-center.title-using
-                h1.text-center CÁCH SỬ DỤNG
-            .col-6.text-center
-                img(src="images/videoy.png", alt="")
-                h5.text-center ỨNG DỤNG ĐIỀU KHIỂN WIFI
-                p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            .col-6.text-center
-                img(src="images/videoy.png", alt="")
-                h5.text-center ỨNG DỤNG ĐIỀU KHIỂN WIFI
-                p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            
-            
+    .ecool-product
+        .container
+            nav.fs-10.font-weight-light(aria-label='breadcrumb')
+                ol.breadcrumb
+                    li.breadcrumb-item
+                        a(href='/home.html') Home
+                    li.breadcrumb-item.active(aria-current='page')
+                        a(href='#') Sản phẩm
+        .container.container--1020
+            .row
+                .col-12.mb-5
+                    h1.font-weight-medium.text-center.fs-22.fs-lg-31.mb-4 ĐIỀU HÒA ECOOL
+                    p.fs-13.font-weight-medium.products__description
+                        |Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam
+                .col-12.images-products
+                    img(src="images/banner-product.png", alt="")
+            .row.products-title
+                .col-12
+                    h2.text-center.fs-20.fs-lg-26 LỰA CHỌN MÁY ĐIỀU HÒA
+                .col-12.text-center
+                    a.fs-12.font-weight-medium.text-center(href="#") XEM TẤT CẢ MÁY ĐIỀU HÒA >
+            .row.products__list
+                .col-6.col-lg-3
+                    .item-product.bg-gray.text-center
+                        img.item-product__img(src="images/product3.png", alt="") 
+                        .item-product__content.text-center
+                            h5.fs-12.font-weight-medium.mb-1.mt-0.text-center Điều hòa inverter
+                            p.text-center.fs-9.font-weight-light.mb-0  Siêu tiết kiệm điện
+                        a.text-center(href="#")
+                            .btn.btn--product.fs-7 Chi tiết sản phẩm
+                .col-6.col-lg-3
+                    .item-product.bg-gray.text-center
+                        img.item-product__img(src="images/product3.png", alt="") 
+                        .item-product__content.text-center
+                            h5.fs-12.font-weight-medium.mb-1.mt-0.text-center Điều hòa Wifi
+                            p.text-center.fs-9.font-weight-light.mb-0  Điều khiển bằng App
+                        a.text-center(href="#")
+                            .btn.btn--product.fs-7 Chi tiết sản phẩm
+                .col-6.col-lg-3
+                    .item-product.bg-gray.text-center
+                        img.item-product__img(src="images/product3.png", alt="") 
+                        .item-product__content.text-center
+                            h5.fs-12.font-weight-medium.mb-1.mt-0.text-center Điều hòa 1 chiều tiêu chuẩn
+                            p.text-center.fs-9.font-weight-light.mb-0  Làm mát nhanh
+                        a.text-center(href="#")
+                            .btn.btn--product.fs-7 Chi tiết sản phẩm
+                .col-6.col-lg-3
+                    .item-product.bg-gray.text-center
+                        img.item-product__img(src="images/product3.png", alt="") 
+                        .item-product__content.text-center
+                            h5.fs-12.font-weight-medium.mb-1.mt-0.text-center Điều hòa 2 chiều tiêu chuẩn
+                            p.text-center.fs-9.font-weight-light.mb-0  Lọc sạch sâu
+                        a.text-center(href="#")
+                            .btn.btn--product.fs-7 Chi tiết sản phẩm
+            .row.my-services
+                .col-12.text-center.title-service
+                    h2.fs-20.fs-lg-26.font-weight-medium.mt-0.mb-3.text-center DỊCH VỤ CỦA CHÚNG TÔI
+                    h5.font-weight-medium.fs-12.m-0.text-center Cảm kết lắp đặt, bảo hành
+            .row.service-items
+                .col-12.col-lg-4.text-center
+                    .service-item
+                        img.img-service(src="images/icon4.png", alt="")
+                        h5.fs-12.font-weight-semi-bold.mb-4.text-center Tài chính
+                        p.fs-10.font-weight-light.text-center We offer interest-free credit (0% APR Representative) in all areas of the store.
+                        a.fs-10.text-center(href="#") Chi tiết
+                .col-12.col-lg-4.text-center
+                    .service-item
+                        img.img-service(src="images/icon5.png", alt="")
+                        h5.fs-12.font-weight-semi-bold.mb-4.text-center Vận chuyển
+                        p.fs-10.font-weight-light.text-center We offer delivery methods for all your purchases, large and small.
+                        a.fs-10.text-center(href="#") Chi tiết
+                .col-12.col-lg-4.text-center
+                    .service-item
+                        img.img-service(src="images/icon6.png", alt="")
+                        h5.fs-12.font-weight-semi-bold.mb-4.text-center Lắp đặt
+                        p.fs-10.font-weight-light.text-center Our fully co-ordinated service includes a 5-year guarantee.
+                        a.fs-10.text-center(href="#") Chi tiết
+            img.w-100.service-banner(src='images/productbanner.png')
+        section.ecool-app.bg-gray
+            .container.container--1020
+                .row
+                    .col-12.col-lg-6
+                        .ecool-app__content
+                            h3.fs-14.fs-lg-21.text-center.mt-5.font-weight-medium ỨNG DỤNG ĐIỀU KHIỂN WIFI
+                            h2.mb-4.fs-22.fs-lg-41.ff-mobifone.text-center ECOOL APP
+                            p.fs-10.font-weight-light.text-justify Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                            a.fs-12.font-weight-semi-bold(href="#") Tìm hiểu thêm
+                    .col-12.col-lg-6
+                        .row
+                            .col-12.text-center
+                                img.ecool-app__img.ecool-app__img--left(src="images/application1.png", alt="")
+                                img.ecool-app__img(src="images/application2.png", alt="")
+        .container.container--1020
+            .row.using
+                .col-12.text-center.title-using
+                    h2.fs-20.fs-lg-26.font-weight-medium.text-center CÁCH SỬ DỤNG
+                .col-12.col-lg-6
+                    iframe(width='100%', height='272', src='https://www.youtube.com/embed/UPO-xWfvA4o', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+                    h5.fs-14.font-weight-semi-bold Cách lắp đặt điều hòa eCool
+                    p.fs-12 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+                .col-12.col-lg-6
+                    iframe(width='100%', height='272', src='https://www.youtube.com/embed/UPO-xWfvA4o', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+                    h5.fs-14.font-weight-semi-bold Cách kết nối thiết bị điều khiển với điều hòa wifi
+                    p.fs-12 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam 
+                
+                
 

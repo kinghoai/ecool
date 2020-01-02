@@ -1,41 +1,88 @@
-.title-products
-    margin-bottom 40px
-.description-products
-    font-weight 600
-    margin-bottom 40px
-.images-products
-    margin-bottom 80px
-.img-item-product
-    margin-top 60px
-    margin-bottom 60px
-.item-des
-    margin-bottom 60px
-.btn--product
-    font-size 16px
-    border 2px solid grey
-    border-radius 20px
-    margin-bottom 40px
-.item-product
-    background-color #f7f8fa
-    margin-bottom 40px
-    padding 20px
-.link-products-list
-    margin-bottom 60px
-.title-service  
-  margin-bottom 80px
-.img-service
-    display block
-    margin-left auto
-    margin-right auto
-    width 60px
-    height 60px
-    text-align center
-.service-item
-    margin-bottom 80px
-.application
-    margin-bottom 80px
-    background-color #f7f8fa
-.title-using 
-    margin-bottom 80px
-.using 
-    margin-bottom 100px
+.ecool-product
+    .products__description
+        max-width 750px
+        margin 0 auto
+    .products-title
+        margin-top 40px
+        margin-bottom: 30px
+    .products__list
+        margin-left: -5px
+        margin-right: -5px
+        .col-6.col-lg-3
+            padding-left 5px
+            padding-right 5px
+            .item-product
+                padding-top 70px
+                padding-bottom 50px
+                margin-bottom 20px
+                .item-product__img
+                    max-width 52%
+                    margin 0 auto 55px
+                .item-product__content
+                    margin-bottom 30px
+                .btn--product
+                    padding 5px 12px
+                    border-radius: 10px
+                    border 1px solid
+    .my-services
+        margin-bottom 30px
+        margin-top 30px
+    .service-items
+        margin-bottom 40px
+        .service-item
+            max-width 204px
+            margin 0 auto 20px
+        .img-service
+            width 70px
+            height 70px
+            object-fit: contain
+        p
+            line-height: 18px
+        a
+            color #08649C
+    .service-banner
+        margin-bottom 50px
+    .ecool-app
+        padding-top 136px
+        padding-bottom: 136px
+        .ecool-app__content
+            width 320px
+            margin 0 auto
+            h2
+                letter-spacing: 3px
+            a
+                color #08649C
+                margin-top 25px
+                display inline-block
+                margin-bottom: 30px
+        .ecool-app__img
+            border-radius: 8px
+            width calc(50% - 10px) !important 
+            max-width: 191px
+            -webkit-box-shadow: 3px 7px 7px 0px rgba(0,37,68,0.2);
+            -moz-box-shadow: 3px 7px 7px 0px rgba(0,37,68,0.2);
+            box-shadow: 3px 7px 7px 0px rgba(0,37,68,0.2);
+        .ecool-app__img--left
+            margin-right 20px
+    .using
+        padding-top 40px
+        padding-bottom 20px
+        h2
+            margin-bottom: 25px
+@media (min-width 992px)
+    .ecool-product
+        .products-title
+            margin-top 70px
+            margin-bottom 63px
+        .my-services
+            margin-bottom 50px
+            margin-top 70px
+        .service-items
+            margin-bottom 80px
+        .service-banner
+            margin-bottom 80px
+        .using
+            padding-top 70px
+            padding-bottom 40px
+            h2
+                margin-bottom: 50px

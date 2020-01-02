@@ -37,8 +37,6 @@ $(document).ready(function () {
         speed: 500,
         arrows: false,
         fade: false,
-        autoplay: true,
-        autoplaySpeed: 5000,
     });
     $('.product-thumbnails').slick({
         dots: false,
@@ -82,7 +80,6 @@ $(document).ready(function () {
                 }
             },
         ]
-    });
     });
 
     $('.slide-featured-product-thumbnails').slick({
