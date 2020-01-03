@@ -1,93 +1,120 @@
 extends ../layouts/main.pug
 
 block content
-    img.img-news(src="images/productbanner.png", alt="Sơn Hà")
-    .container.container--860
-        .row.menu-sub-news.text-center
-            .col-3.menu-sub-news-title-active
-                a(href="#")
-                    p.menu-sub-news-title Tin tức và sự kiện
-            .col-3
-                a(href="#")
-                    p.menu-sub-news-title Góc tư vấn
-            .col-3
-                a(href="#")
-                    p.menu-sub-news-title Chương trình ưu đãi
-            .col-3
-                a(href="#")
-                    p.menu-sub-news-title Video
-        .container.container--860
+    .ecool-news
+        .position-relative
+            img.w-100(src="images/banner-news.png", alt="Sơn Hà")
+            .container
+                .row.menu-sub-news.text-center
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title.active Tin tức và sự kiện
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title Góc tư vấn
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title Chương trình ưu đãi
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title Video
+        .container.container--1020
             .row.news-header
-                .col-7
+                .col-12.col-lg-7
+                    .news__slides
+                        .news__slide.position-relative
+                            img.w-100(src='images/slide-news.png')
+                            .news__content.position-absolute
+                                p.news__tag.fs-10.text-white.font-weight-medium
+                                    | Sự kiện
+                                h2.text-white.fs-18.font-weight-bold
+                                    | Dự án điều hòa eCool đã được ký kết thành công với đối tác Thái Lan
+                                p.news__date.fs-8.text-white.font-weight-medium
+                                    | 26/12/2019
+                                a.news__link.fs-8.text-white.font-weight-bold
+                                    | Chi tiết
+                                    img.arrow-icon(src='images/arrowicon.png')
+                        .news__slide.position-relative
+                            img.w-100(src='images/slide-news.png')
+                            .news__content.position-absolute
+                                p.news__tag.fs-10.text-white.font-weight-medium
+                                    | Sự kiện
+                                h2.text-white.fs-18.font-weight-bold
+                                    | Dự án điều hòa eCool đã được ký kết thành công với đối tác Thái Lan
+                                p.news__date.fs-8.text-white.font-weight-medium
+                                    | 26/12/2019
+                                a.news__link.fs-8.text-white.font-weight-bold
+                                    | Chi tiết
+                                    img.arrow-icon(src='images/arrowicon.png')
+                .col-12.col-lg-5
+                    .row.item-news-header
+                        .col-6
+                            img.img-header(src="images/news-item.jpg", alt="")
+                        .col-6
+                            span.type-news Tư Vấn
+                            br
+                            strong
+                                span.title-news Chọn dòng công suất nào cho phòng nhà bạn
+                            br
+                            span.type-news 26/12/2019
+                    .row.item-news-header
+                        .col-6
+                            img.img-header(src="images/news-item.jpg", alt="")
+                        .col-6
+                            span.type-news Tư Vấn
+                            br
+                            strong
+                                span.title-news Chọn dòng công suất nào cho phòng nhà bạn
+                            br
+                            span.type-news 26/12/2019
+                    .row.item-news-header
+                        .col-6
+                            img.img-header(src="images/news-item.jpg", alt="")
+                        .col-6
+                            span.type-news Tư Vấn
+                            br
+                            strong
+                                span.title-news Chọn dòng công suất nào cho phòng nhà bạn
+                            br
+                            span.type-news 26/12/2019
+        .news-event
+            .container.container--1020
+                .row
+                    .col-12
+                        h3.title-news-event Tin tức và sự kiện         
+                .row.row-news-event
+                    .col-12.col-lg-4
+                        .items-news-event
+                            img.w-100(src="images/news-item.jpg", alt="")
+                            h3.name-news-event.fs-12.font-weight-bold Show room eCool tại Long Biên
+                            p.fs-9.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-12.col-lg-4
+                        .items-news-event
+                            img.w-100(src="images/news-item.jpg", alt="")
+                            h3.name-news-event.fs-12.font-weight-bold Show room eCool tại Long Biên
+                            p.fs-9.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-12.col-lg-4
+                        .items-news-event
+                            img.w-100(src="images/news-item.jpg", alt="")
+                            h3.name-news-event.fs-12.font-weight-bold Show room eCool tại Long Biên
+                            p.fs-9.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-12.col-lg-4
+                        .items-news-event
+                            img.w-100(src="images/news-item.jpg", alt="")
+                            h3.name-news-event.fs-12.font-weight-bold Show room eCool tại Long Biên
+                            p.fs-9.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-12.col-lg-4
+                        .items-news-event
+                            img.w-100(src="images/news-item.jpg", alt="")
+                            h3.name-news-event.fs-12.font-weight-bold Show room eCool tại Long Biên
+                            p.fs-9.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-12.col-lg-4
+                        .items-news-event
+                            img.w-100(src="images/news-item.jpg", alt="")
+                            h3.name-news-event.fs-12.font-weight-bold Show room eCool tại Long Biên
+                            p.fs-9.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-12.text-center.mt-2.mb-5
+                        a.fs-10.font-weight-light.text-center.see-all(href="#") Xem tất cả
+                            img(src='images/arrowdown.png')
                     
-                .col-5
-                    .row.item-news-header
-                        .col-5
-                            img.img-header(src="images/news.png", alt="")
-                        .col-7
-                            span.type-news Tư Vấn
-                            br
-                            strong
-                                span.title-news Chọn dòng công suất nào cho phòng nhà bạn
-                            br
-                            span.type-news 26/12/2019
-                    .row.item-news-header
-                        .col-5
-                            img.img-header(src="images/news.png", alt="")
-                        .col-7
-                            span.type-news Tư Vấn
-                            br
-                            strong
-                                span.title-news Chọn dòng công suất nào cho phòng nhà bạn
-                            br
-                            span.type-news 26/12/2019
-                    .row.item-news-header
-                        .col-5
-                            img.img-header(src="images/news.png", alt="")
-                        .col-7
-                            span.type-news Tư Vấn
-                            br
-                            strong
-                                span.title-news Chọn dòng công suất nào cho phòng nhà bạn
-                            br
-                            span.type-news 26/12/2019
-    .news-event
-        .container.container--860  
-            .row
-                .col-12
-                    h3.title-news-event Tin tức và sự kiện         
-            .row
-                .col-4.items-news-event
-                    img(src="images/news.png", alt="")
-                    strong
-                        p.name-news-event Show room eCool tại Long Biên
-                    p.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                .col-4.items-news-event
-                    img(src="images/news.png", alt="")
-                    strong
-                        p.name-news-event Show room eCool tại Long Biên
-                    p.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                .col-4.items-news-event
-                    img(src="images/news.png", alt="")
-                    strong
-                        p.name-news-event Show room eCool tại Long Biên
-                    p.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                .col-4.items-news-event
-                    img(src="images/news.png", alt="")
-                    strong
-                        p.name-news-event Show room eCool tại Long Biên
-                    p.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                .col-4.items-news-event
-                    img(src="images/news.png", alt="")
-                    strong
-                        p.name-news-event Show room eCool tại Long Biên
-                    p.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                .col-4.items-news-event
-                    img(src="images/news.png", alt="")
-                    strong
-                        p.name-news-event Show room eCool tại Long Biên
-                    p.short-description-news Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                .col-md-12.text-center
-                    a.text-center.see-all(href="#") Xem tất cả
-                
 

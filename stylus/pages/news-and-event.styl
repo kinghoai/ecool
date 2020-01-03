@@ -4,19 +4,21 @@
 .menu-sub-news
     text-align center
     background-color #fff
-    padding 5px
     position absolute
-    top 555px
+    bottom 0
+    width 100%
+    max-width 990px
+    left 50%
+    transform: translateX(-50%)
 .menu-sub-news-title
-    font-weight bold
-    font-size 16px
-    width 170px
-    
-.menu-sub-news-title-active
+    white-space: nowrap
+    margin-bottom: 0
+    padding 15px
+.menu-sub-news-title.active
     border-bottom 2px solid #30bcee
-
 .news-header
     margin-top 46px
+    margin-bottom 46px
 .img-header
     width 100%
     height 100px
@@ -26,23 +28,51 @@
 .type-news 
     font-size 12px
 .item-news-header
-    margin-top 5px
+    margin-bottom 15px
 .news-event
     background-color #f7f8fa
+    .row-news-event
+        margin-left: -27px
+        margin-right: -27px
+        .col-12
+            padding-left: 27px
+            padding-right: 27px
 .title-news-event
     font-weight bold
-    margin-top 40px
-    margin-bottom 40px
+    margin-top 33px
+    margin-bottom 38px
+    font-size 16px
+    line-height: 19px
 .name-news-event
-    margin 10px 0 10px 0 
-    font-size 14px
-    font-weight bold
-    text-align center
+    margin 18px 0 9px 0
+    height 34px
+    overflow hidden
+    line-height: 18px
+    padding-left: 15px
+    padding-right: 15px
 .short-description-news
-    text-align center
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 18px
 .items-news-event
     background-color #fff
-    margin-top 20px
-    margin-bottom 20px
+    margin-bottom 30px
 .see-all 
-    color blue
+    color #08649C
+    img
+        width 6px
+        margin-left: 10px
+.news__slides
+    .news__content
+        width 65%
+        height 40%
+        left 30px
+        bottom 20px
+.ecool-news + footer
+    .subscribe
+        background-color: #fff
+.news__link
+    .arrow-icon
+        width: 12px;
+        display: inline;
+        margin-left: 10px;

@@ -97,4 +97,10 @@ $(document).ready(function () {
         arrows: false,
         asNavFor: ".slide-featured-product-thumbnails"
     });
+
+    $(".news__slides").slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+    });
 });
