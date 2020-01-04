@@ -26,7 +26,7 @@ function styles() {
     gulp.src('./stylus/pages/*.styl')
         .pipe(stylus())
         .pipe(gulp.dest('./disk/css/pages'))
-    return gulp.src('./stylus/main.styl')
+    gulp.src('./stylus/main.styl')
         .pipe(stylus())
         .pipe(gulp.dest('./disk/css'))
 }
