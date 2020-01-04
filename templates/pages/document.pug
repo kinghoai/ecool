@@ -1,8 +1,18 @@
 extends ../layouts/main.pug
-block content  
+block content
+        .container
+            .row
+                .col-12
+                    nav.fs-10.font-weight-light(aria-label='breadcrumb')
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='/home.html') Home
+                            li.breadcrumb-item
+                                a(href='/home.html') Giới thiệu
+                            li.breadcrumb-item.active(aria-current='page')
+                                a(href='#') Điều hòa Inverter
         .container.container--691
-            p Home  / Hỗ Trợ  / Tài Liệu
-            .row.items-support
+            .row
                 .col-lg-4.col-12.item-support
                     img(src="images/support.png", alt="")
                     p.text-center.support-title Hướng dẫn sử dụng
@@ -51,7 +61,7 @@ block content
                             img.img-icon-left(src="images/seen.png", alt="")
                         .col-6.text-center
                             img.img-icon-right(src="images/download.png", alt="")
-                .col-12.text-center
-                    a.text-center(href="#") Hiển thị thông tin nhiều hơn 
+                .col-12.text-center.see-more-document
+                    a.text-center.name-see-more-document(href="#") Hiển thị thông tin nhiều hơn
 
 
