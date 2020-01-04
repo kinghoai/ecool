@@ -1,7 +1,7 @@
 extends ../layouts/main.pug
 
 block content
-    .ecool-news
+    .ecool-video
         .position-relative
             img.w-100(src="images/banner-news.png", alt="Sơn Hà")
             .container
@@ -18,36 +18,39 @@ block content
                     .col-6.col-lg-3.p-0
                         a(href="#")
                             p.fs-16.font-weight-medium.menu-sub-news-title.active   Video
-    .container.container--860
-        .row.video-header
-            .col-lg-8.col-12
-                img.img-video(src="images/videoy.png", alt="Sơn Hà")
-            .col-lg-4.col-12
-                p.video-header-title.fs-25 HƯỚNG DẪN VỆ SINH MÀNG LỌC
-                p.fs-10 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                .arrow
-                    span.arrow__left
-                        img(src='images/arrowleft.png')
-                    span.arrow__right
-                        img(src='images/arrowright.png')
-        .row.video-items
-            .col-12
-                h3.video-items-title.fs-16 Có thể bạn sẽ quan tâm
-            .col-lg-4.col-12
-                .item-video
-                    img.img-item-video(src="images/videoy.png", alt="Sơn Hà")
-                    p.name-item-video.fs-11  Cách nhận biết điều hòa cần được bảo dưỡng
-                    p.description-item-video.fs-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            .col-lg-4.col-12
-                .item-video
-                    img.img-item-video(src="images/videoy.png", alt="Sơn Hà")
-                    p.name-item-video.fs-11  Cách nhận biết điều hòa cần được bảo dưỡng
-                    p.description-item-video.fs-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            .col-lg-4.col-12
-                .item-video
-                    img.img-item-video(src="images/videoy.png", alt="Sơn Hà")
-                    p.name-item-video.fs-11  Cách nhận biết điều hòa cần được bảo dưỡng
-                    p.description-item-video.fs-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            .col-12.text-center.mt-2.mb-5
-                a.fs-10.font-weight-light.text-center.see-all(href="#") Xem thêm video
-                    img(src='images/arrowdown.png')
+        .container.container--860
+            .row.video-header
+                .col-lg-8.col-12
+                    img.img-video(src="images/videoy.png", alt="Sơn Hà")
+                .col-lg-4.col-12
+                    p.video-header-title.fs-25 HƯỚNG DẪN VỆ SINH MÀNG LỌC
+                    p.fs-10 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    .arrow
+                        span.arrow__left
+                            img(src='images/arrowleft.png')
+                        span.arrow__right
+                            img(src='images/arrowright.png')
+            .row.video-items
+                .col-12
+                    h3.video-items-title.fs-16 Có thể bạn sẽ quan tâm
+                .col-lg-4.col-12
+                    .item-video
+                        img.img-item-video(src="images/videoy.png", alt="Sơn Hà")
+                        .col-12
+                            h4.font-weight-bold.fs-11  Cách nhận biết điều hòa cần được bảo dưỡng
+                            p.description-item-video.fs-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                .col-lg-4.col-12
+                    .item-video
+                        img.img-item-video(src="images/videoy.png", alt="Sơn Hà")
+                        .col-12
+                            h4.font-weight-bold.fs-11  Cách nhận biết điều hòa cần được bảo dưỡng
+                            p.description-item-video.fs-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                .col-lg-4.col-12
+                    .item-video
+                        img.img-item-video(src="images/videoy.png", alt="Sơn Hà")
+                        .col-12
+                            h4.font-weight-bold.fs-11  Cách nhận biết điều hòa cần được bảo dưỡng
+                            p.description-item-video.fs-10 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                .col-12.text-center.mt-2.mb-5
+                    a.fs-10.font-weight-light.text-center.see-all(href="#") Xem thêm video
+                        img(src='images/arrowdown.png')
