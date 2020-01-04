@@ -1,5 +1,4 @@
 .news-detail
-    margin-bottom 60px
     .social-news-detail
         .social__icon
             width 23px
@@ -10,8 +9,45 @@
     .news-date
         margin-top 30px
     .news-related
-        padding-top 80px
-        padding-bottom 90px
+        padding-top 40px
+        padding-bottom 45px
     .related-item
-        padding-left 30px
-        padding-right 30px
+        padding-left 15px
+        padding-right 15px
+    .related-items
+        a
+            &:hover
+                text-decoration none
+        .slick-prev
+            background-image: url('/images/arrow-left-slide.png');
+            background-size: 100% 100%;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2);
+            border-radius: 50%;
+            width 34px
+            height 34px
+            top 40%
+            left -50px
+            &:before
+                content none
+        .slick-next
+            background-image: url('/images/arrow-right-slide.png');
+            background-size: 100% 100%;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2);
+            border-radius: 50%;
+            width 34px
+            height 34px
+            top 40%
+            right -50px
+            &:before
+                content none
+.news-detail + footer
+    .subscribe
+        background-color: #fff
+@media (min-width: 992px)
+    .news-detail
+        .news-related
+            padding-top 80px
+            padding-bottom 90px
+        .related-item
+            padding-left 30px
+            padding-right 30px
