@@ -1,98 +1,102 @@
 extends ../layouts/main.pug
 
 block content
-    .container
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb
-                li.breadcrumb-item
-                    a(href='/home.html') Home
-                li.breadcrumb-item
-                    a(href='/home.html') Hỗ trợ
-                li.breadcrumb-item.active(aria-current='page')
-                    a(href='#') Hệ thống đại lý
-    .container.container--790
-        h1.text-center.mt-5.mb-5 Hệ thống đại lý eCool
-        p.mt-5.mb-5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        form.form-search-system.text-center(action="#")
-            input.input-search-system.form-group.border-form-system.form-control(type='text', placeholder='Nhập địa chỉ hoặc tên cửa hàng')
-            button.btn-search-system(type='submit')
-                img.img-btn-search(src='images/search.png')
-        iframe.mt-5.mb-5.map-contact(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29786.60214010603!2d105.72967043335746!3d21.059667202056662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454e33407ecc7%3A0x6b9d843be64f7f06!2zTWluaCBLaGFpLCBC4bqvYyBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1577599643198!5m2!1svi!2s', frameborder='0', style='border:0;', allowfullscreen='')
-        table.mt-5.mb-5.table.table-sm
-            thead
-                tr
-                    th(scope='col',width='15%') Khoảng cách
-                    th(scope='col',width='20%') Đại lý
-                    th(scope='col') Địa chỉ
-                    th 
-                        select
-                            option(value="1") Tất cả
-                            option(value="1") Hà Nội
-                            option(value="1") Hải Phòng
-                            option(value="1") Đà Nẵng
-            tbody
-                .tr-system-ecool.mt-3.mb-3
+    .page-system-cool
+        .container
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb
+                    li.breadcrumb-item
+                        a(href='/home.html') Home
+                    li.breadcrumb-item
+                        a(href='/home.html') Hỗ trợ
+                    li.breadcrumb-item.active(aria-current='page')
+                        a(href='#') Hệ thống đại lý
+        .container.container--790
+            h1.text-center.mt-5.mb-5 Hệ thống đại lý eCool
+            p.mt-5.mb-5 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.
+            form.form-search-system.text-center(action="#")
+                .form-group
+                    input.input-search-system.form-group.border-form-system.form-control(type='text', placeholder='Nhập địa chỉ hoặc tên cửa hàng')
+                    button.btn-search-system(type='submit')
+                        img.img-btn-search(src='images/search.png')
+                .form-group
+                    span Sử dụng vị trí của bạn
+            iframe.mt-5.mb-5.map-contact(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29786.60214010603!2d105.72967043335746!3d21.059667202056662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454e33407ecc7%3A0x6b9d843be64f7f06!2zTWluaCBLaGFpLCBC4bqvYyBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1577599643198!5m2!1svi!2s', frameborder='0', style='border:0;', allowfullscreen='')
+            table.mt-5.mb-4.table.table-sm
+                thead
                     tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội
-                    tr
-                        td 72.25 km
-                        th.shop-ecool Đại lí Toàn Thu
-                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        td Hà Nội`
-        a(href="#")
-            p.see-more-system-ecool.text-center Xem thêm
+                        th(scope='col',width='15%') Khoảng cách
+                        th(scope='col',width='20%') Đại lý
+                        th(scope='col') Địa chỉ
+                        th 
+                            select.form-control
+                                option(value="1") Tất cả
+                                option(value="1") Hà Nội
+                                option(value="1") Hải Phòng
+                                option(value="1") Đà Nẵng
+                tbody
+                    .tr-system-ecool.mt-3.mb-3
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+                        tr
+                            td 72.25 km
+                            td.shop-ecool Đại lí Toàn Thu
+                            td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            td.text-right Hà Nội
+            a(href="#")
+                p.see-more-system-ecool.text-center Xem thêm
 
 
