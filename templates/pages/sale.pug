@@ -1,51 +1,54 @@
 extends ../layouts/main.pug
 
 block content
-    img.img-news(src="images/productbanner.png", alt="Sơn Hà")
-    .container.container--860
-        .row.menu-sub-news.text-center
-            .col-lg-3.col-3.menu-sub-news-title-active
-                a(href="#")
-                    p.menu-sub-news-title Tin tức và sự kiện
-            .col-lg-3.col-3
-                a(href="#")
-                    p.menu-sub-news-title Góc tư vấn
-            .col-lg-3.col-3
-                a(href="#")
-                    p.menu-sub-news-title Chương trình ưu đãi
-            .col-lg-3.col-3
-                a(href="#")
-                    p.menu-sub-news-title Video
+    .ecool-news
+        .position-relative
+            img.w-100(src="images/banner-news.png", alt="Sơn Hà")
+            .container
+                .row.menu-sub-news.text-center
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title Tin tức và sự kiện
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title Góc tư vấn
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title.active  Chương trình ưu đãi
+                    .col-6.col-lg-3.p-0
+                        a(href="#")
+                            p.fs-16.font-weight-medium.menu-sub-news-title  Video
     .container.container--860
         .row.sale-header
             .col-lg-7.col-12
-              img.img-sale(src="images/news-4.png", alt="Sơn Hà")
+              img.img-sale(src="images/item-08.jpg", alt="Sơn Hà")
             .col-lg-5.col-12
                 .sale-header-title
-                    h3 Ưu đãi cực khủng
-                    h3 Mua điều hòa eCool giảm giá 50%
-                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    h3.fs-18  Ưu đãi cực khủng
+                    h3.fs-18  Mua điều hòa eCool giảm giá 50%
+                p.fs-10.des-sale-header Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
         .row.sale-item
             .col-lg-4.col-12
-              img.img-sale-item(src="images/news-4.png", alt="Sơn Hà")
+              img.img-sale-item(src="images/item-09.jpg", alt="Sơn Hà")
             .col-lg-8.col-12
-                h5.name-item-sale Chương trình khuyến mãi ecool miền Bắc
-                p 26/12/2019
-                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                h5.name-item-sale.fs-12 Chương trình khuyến mãi ecool miền Bắc
+                p.fs-10   26/12/2019
+                p.fs-10 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
         .row.sale-item
             .col-lg-4.col-12
-              img.img-sale-item(src="images/news-4.png", alt="Sơn Hà")
-            .col-lg-4.col-12
-                h5.name-item-sale Chương trình khuyến mãi ecool miền Bắc
-                p 26/12/2019
-                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        .row.sale-item
-            .col-lg-4.col-12
-              img.img-sale-item(src="images/news-4.png", alt="Sơn Hà")
+              img.img-sale-item(src="images/item-09.jpg", alt="Sơn Hà")
             .col-lg-8.col-12
-                h5.name-item-sale Chương trình khuyến mãi ecool miền Bắc
-                p 26/12/2019
-                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        .row.see-more
-            .col-12.text-center
-                a.see-more-sale(href="#") Xem thêm
+                h5.name-item-sale.fs-12 Chương trình khuyến mãi ecool miền Bắc
+                p.fs-10   26/12/2019
+                p.fs-10 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+        .row.sale-item
+            .col-lg-4.col-12
+              img.img-sale-item(src="images/item-09.jpg", alt="Sơn Hà")
+            .col-lg-8.col-12
+                h5.name-item-sale.fs-12 Chương trình khuyến mãi ecool miền Bắc
+                p.fs-10   26/12/2019
+                p.fs-10 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+        .row
+            .col-12.text-center.mt-2.mb-5
+                a.fs-10.font-weight-light.text-center.see-all(href="#") Xem thêm
+                    img(src='images/arrowdown.png')
