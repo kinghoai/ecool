@@ -84,9 +84,12 @@
             img
                 width 100%
     .product-footer
-        margin-top 60px
+        margin-top 30px
+        .nav-item
+            width: 100%;
         .nav-link
             padding-bottom 0px
+            
         .nav-tabs .nav-link.active
             color: #495057;
             border none
@@ -97,7 +100,6 @@
                 width: 30px;
                 background: #30BCEE;
                 content: '';
-                margin: 20px auto 0px auto;
                 
     .product-attribute-specs-table
         background #F7F8FA
@@ -107,7 +109,7 @@
         h3
             font-size 23px
             margin-bottom 2rem
-        .bd-right
+        .bd-right:nth-child(1)
             border-right 0.5px solid #000
         h4.highlight
             font-size 25px
@@ -157,7 +159,8 @@
         .sku
             margin-bottom 30px
         .product-description
-            padding 40px 10px
+            padding 10px 10px 40px 10px
+            text-align justify
         .slide
             margin-top 10px
     .item_feautred
@@ -203,8 +206,19 @@
 
 @media (min-width: 992px)
     .product-detail
+        .product-footer
+            margin-top 60px
+            .nav-item
+                width: auto;
+            .nav-tabs .nav-link.active
+                &::after
+                    margin: 20px auto 0px auto;
         .product-main
             padding 0 40px
+        .tab-content
+            .product-description
+                padding 40px 10px
+                text-align center
         .product-support
     
             .item_support
@@ -227,6 +241,7 @@
         .product-attribute-specs-table
             padding 30px
             margin-top: 50px;
+            margin-bottom: 100px
             .specs__content
                 margin-bottom 30px
             h3
@@ -246,6 +261,12 @@
             margin-bottom: 40px
         .product-video
             padding-top 70px
+        .product-viewed
+            margin-bottom: 40px
+            .product-section-title
+                font-size 26px
+                margin-bottom 20px
+                margin-top 20px
         .product-featured
             .col-sm
                 padding-right: 85px;
