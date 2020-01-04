@@ -1,21 +1,22 @@
 extends ../layouts/main.pug
-
+block styles
+    link(href='css/pages/product-detail.css', rel='stylesheet', type='text/css')
 
 block content
-    .container 
-        nav(aria-label='breadcrumb')
-            ol.breadcrumb
-                li.breadcrumb-item
-                    a(href='/home.html') Home
-                li.breadcrumb-item
-                    a(href='/home.html') Sản phẩm
-                li.breadcrumb-item
-                    a(href='/home.html') Điều hoà inventer
-                li.breadcrumb-item.active(aria-current='page')
-                    a(href='#') Điều hoà inventer INV 3789
-    main.main
-        .shop-container.container
-            .product
+    .product-detail
+        .container 
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb
+                    li.breadcrumb-item
+                        a(href='/home.html') Home
+                    li.breadcrumb-item
+                        a(href='/home.html') Sản phẩm
+                    li.breadcrumb-item
+                        a(href='/home.html') Điều hoà inventer
+                    li.breadcrumb-item.active(aria-current='page')
+                        a(href='#') Điều hoà inventer INV 3789
+        main.main
+            .shop-container.container
                 .product-main
                     .row
                         .col-8.product-image
@@ -81,7 +82,7 @@ block content
                                 p.sku INV3789
                                 div 
                                     p   Giữ cho không khí trong lành và sạch khuẩn với hệ thống Màng Lọc Nhiều Lớp. Màng lọc Than Hoạt Tính giúp khử mùi và loại bỏ nhanh chóng các khí độc hại*. Lớp lọc HEPA có khả năng lọc đến 99.97% hạt bụi siêu mịn** và diệt vi khuẩn*** trong không khí.
-                                .row.mt-5.mb-5
+                                .row.mt-5.mb-5.product-featured
                                     .col-sm
                                         img(src="images/product_detail/ic-12.png")
                                         h3.mt-4 Công nghệ hiện đại
@@ -115,7 +116,7 @@ block content
                                             img(src='images/product_detail/ic-21.png')
                                 .product-attribute-specs-table
                                     h3 Thông số kỹ thuật
-                                    .row
+                                    .row.mb-5
                                         .item-spect.bd-right.col
                                             h4.highlight 39m2
                                             span Dung tích (m2)
@@ -128,18 +129,18 @@ block content
                                     div.text-center.pt-5
                                         a.btn-showmore Hiển thị tất cả thông số kỹ thuật
                                 h2.product-title ĐIỀU HÒA ECOOL
-                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
+                                p.product-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
                                 .row.feautred
                                     .col
                                         .item_feautred
                                             img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-22.png")
-                                            h3.item__title.text-center.mb-3
+                                            h3.item__title.text-center
                                                 span.d-block Công nghệ Digital 
                                                 span.d-block Inverter 8 cực 
                                             .item__description.text-center Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                         .item_feautred.mt-5
                                             img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-23.png")
-                                            h3.item__title.text-center.mb-3
+                                            h3.item__title.text-center
                                                 span.d-block Công nghệ làm mát 
                                                 span.d-block Wind-free
                                             .item__description.text-center Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
@@ -148,12 +149,12 @@ block content
                                     .col
                                         .item_feautred
                                             img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-24.png")
-                                            h3.item__title.text-center.mb-3
+                                            h3.item__title.text-center
                                                 span Chế độ ngủ ngon
                                             .item__description.text-center Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                         .item_feautred.mt-5
                                             img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-23.png")
-                                            h3.item__title.text-center.mb-3
+                                            h3.item__title.text-center
                                                 span Easy Filter plus
                                             .item__description.text-center Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
                                 .row.product-video.mt-5
@@ -168,35 +169,36 @@ block content
                                         .item_video__title.text-center.mt-4
                                             h4 HƯỚNG DẪN VỆ SINH MÀNG LỌC
                                 .row.product-support
-                                    .col.item_support
+                                    .col.item_support.item_support_1
                                         .item_support__content
                                             | Cách xử lý tình trạng máy điều hòa rỉ nước
                                         a.link-sp XEM CÂU TRẢ LỜI
-                                    .col.item_support
+                                    .col.item_support.item_support_2
                                         .item_support__content
                                             | Điều khiển từ xa của máy điều hòa không hoạt động
                                         a.link-sp XEM CÂU TRẢ LỜI
-                                a.view-more-sp Hiển thị tất cả hỗ trợ
+                                .view-more-sp.text-center
+                                    a.btn-link-sp Hiển thị tất cả hỗ trợ
                             #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') ...
 
                     .product-viewed
-                        h3.product-section-title.uppercase Các sản phẩm đã xem
+                        h3.product-section-title Các sản phẩm đã xem
                         .list-product.d-flex.justify-content-center
-                            .item-product
+                            .product-viewed__item
                                 .item-product__image
                                     img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-27.png")
                                 .item-product__detail
                                     h3 Inverter eCool INV 3489
                                     span.featured 9000 Btu
                                     h4.item-product__price 3.260.000đ
-                            .item-product
+                            .product-viewed__item
                                 .item-product__image
                                     img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-27.png")
                                 .item-product__detail
                                     h3 Inverter eCool INV 3489
                                     span.featured 9000 Btu
                                     h4.item-product__price 3.260.000đ
-                            .item-product
+                            .product-viewed__item
                                 .item-product__image
                                     img.img-fluid.d-block.mx-auto(src="./images/product_detail/ic-27.png")
                                 .item-product__detail
