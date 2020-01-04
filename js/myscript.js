@@ -46,7 +46,17 @@ $(document).ready(function () {
         focusOnSelect: true,
         verticalSwiping: true,
         centerMode: true,
-        asNavFor: ".product-gallery"
+        centerPadding: 10,
+        asNavFor: ".product-gallery",
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    vertical: false,
+                    centerPadding: 10,
+                }
+            },
+        ]
     });
 
     $(".product-gallery").slick({
