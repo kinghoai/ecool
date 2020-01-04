@@ -3,7 +3,7 @@ extends ../layouts/main.pug
 block content
     .news-detail
         .container
-            nav(aria-label='breadcrumb')
+            nav(aria-label='breadcrumb').fs-10.font-weight-light
                 ol.breadcrumb
                     li.breadcrumb-item
                         a(href='/home.html') Home
@@ -13,7 +13,7 @@ block content
                         a(href='/home.html') Góc tư vấn
                     li.breadcrumb-item.active(aria-current='page')
                         a(href='#') ECool wifi và lưu ý sử dụng
-        .container.container--790
+        .container.container--790.pb-5
             .row
                 .col-12.text-center.fs-16.fs-lg-31.font-weight-bold
                     h1 ECool wifi và lưu ý sử dụng
@@ -24,7 +24,7 @@ block content
                         a(href='#')
                             img.social__icon(src='images/icon11.png')
                 .col-12.fs-10.news-content.text-justify
-                    p.font-weight-bold
+                    p.font-weight-bold.fs-14
                         | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
                     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -32,6 +32,7 @@ block content
                     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
 
                     img.w-100(src="images/new-1.jpg", alt="ECool wifi và lưu ý sử dụng")
+                    p.font-italic Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
 
                     p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
 
@@ -42,3 +43,35 @@ block content
                     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
 
                     span.news-date.float-right 30/12/2019
+        section.news-related.bg-gray
+            .container.container--850
+                .related-items
+                    a(href="#")
+                        .related-item
+                            img.mb-3.w-100(src='images/new-2.jpg')
+                            p.related-tag.fs-10.text-uppercase
+                                | Tư vấn
+                            h5.fs-16.font-weight-bold
+                                | Chọn dòng công suất nào cho phòng khách nhà bạn
+                    a(href="#")
+                        .related-item
+                            img.mb-3.w-100(src='images/new-2.jpg')
+                            p.related-tag.fs-10.text-uppercase
+                                | Tư vấn
+                            h5.fs-16.font-weight-bold
+                                | Giảm 30% giá điều hòa khi mua tại Showroom
+                    a(href="#")
+                        .related-item
+                            img.mb-3.w-100(src='images/new-2.jpg')
+                            p.related-tag.fs-10.text-uppercase
+                                | Tư vấn
+                            h5.fs-16.font-weight-bold
+                                | Cách nhận biết điều hòa cần được bảo dưỡng
+                    a(href="#")
+                        .related-item
+                            img.mb-3.w-100(src='images/new-2.jpg')
+                            p.related-tag.fs-10.text-uppercase
+                                | Tư vấn
+                            h5.fs-16.font-weight-bold
+                                | Chọn dòng công suất nào cho phòng khách nhà bạn
+
