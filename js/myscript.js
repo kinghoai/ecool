@@ -55,7 +55,7 @@ $(document).ready(function () {
         asNavFor: ".product-thumbnails"
       });
 
-      
+
     $("#slides-sonha").slick({
         slidesToShow: 1,
         dots: false,
@@ -102,5 +102,20 @@ $(document).ready(function () {
         slidesToShow: 1,
         dots: false,
         arrows: false,
+    });
+
+    $(".related-items").slick({
+        slidesToShow: 3,
+        dots: false,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+        ]
     });
 });
