@@ -116,7 +116,7 @@ $(document).ready(function () {
 
     $(".related-items").slick({
         slidesToShow: 3,
-            dots: false,
+        dots: false,
         arrows: true,
         responsive: [
             {
@@ -147,20 +147,28 @@ $(document).ready(function () {
         prevArrow: $('.arrow__left'),
         nextArrow: $('.arrow__right'),
     });
-
+    $(".selector-ranger").click(function () {
+        $(this).addClass("active");
+    });
+    $(document).on("click", function (e) {
+        if ($(e.target).is(".selector-ranger") === false) {
+            $(".selector-ranger").removeClass("active");
+        }
+    });
     $("#slider-range").slider({
         range: true,
         min: 0,
         max: 3500,
         step: 50,
-        slide: function( event, ui ) {
-            $( "#min-price").html(ui.values[ 0 ]);
-
+        values: [0, 3500],
+        slide: function (event, ui) {
+            console.log(ui.values)
+            $("#min-price").html(ui.values[0]);
             suffix = '';
-            if (ui.values[ 1 ] == $( "#max-price").data('max') ){
+            if (ui.values[1] == $("#max-price").data('max')) {
                 suffix = ' +';
             }
-            $( "#max-price").html(ui.values[ 1 ] + suffix);
+            $("#max-price").html(ui.values[1] + suffix);
         }
     });
 
