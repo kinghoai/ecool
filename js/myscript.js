@@ -116,7 +116,7 @@ $(document).ready(function () {
 
     $(".related-items").slick({
         slidesToShow: 3,
-        dots: false,
+            dots: false,
         arrows: true,
         responsive: [
             {
@@ -147,5 +147,22 @@ $(document).ready(function () {
         prevArrow: $('.arrow__left'),
         nextArrow: $('.arrow__right'),
     });
+
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 3500,
+        step: 50,
+        slide: function( event, ui ) {
+            $( "#min-price").html(ui.values[ 0 ]);
+
+            suffix = '';
+            if (ui.values[ 1 ] == $( "#max-price").data('max') ){
+                suffix = ' +';
+            }
+            $( "#max-price").html(ui.values[ 1 ] + suffix);
+        }
+    });
+
 
 });
