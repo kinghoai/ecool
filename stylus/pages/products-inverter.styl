@@ -11,6 +11,9 @@
     font-weight:600;
 .select-box__input-text
     font-weight:500;
+.select-box
+    z-index 1
+
 @media (min-width 320px)
     .btn-search-system
         position: absolute;
@@ -46,6 +49,86 @@
         padding 5px
         border-radius 20px
         background-color #f7f8fa
+.selector {
+position: relative;
+padding: 20px;
+width: 400px;
+color: #7e7e7e;
+}
+.selector ul {
+position: relative;
+display: block;
+overflow: auto;
+min-width: 138px;
+max-height: 200px;
+background: #fff;
+list-style: none;
+white-space: inherit;
+padding-right: 17px;
+width: calc(100% + 17px)
+}
+.selector li {
+position: relative;
+padding: 3px 20px 3px 25px;
+cursor: pointer
+}
+.selector li:before {
+position: absolute;
+top: 50%;
+left: 0;
+top: 4px;
+display: inline-block;
+margin-right: 9px;
+width: 17px;
+height: 17px;
+background-color: #f4f4f4;
+border: 1px solid #d5d5d5;
+content: ""
+}
+.selector li[data-selected="1"]:before {
+border: 1px solid #d7d7d7;
+background-color: #fff
+}
+.selector li[data-selected="1"]:after {
+position: absolute;
+top: 50%;
+left: 3px;
+top: 11px;
+display: inline-block;
+width: 4px;
+height: 10px;
+border-right: 2px solid;
+border-bottom: 2px solid;
+background: none;
+color: #39c9a9;
+content: "";
+-webkit-transform: rotate(40deg) translateY(-50%);
+transform: rotate(40deg) translateY(-50%)
+}
+.selector li:hover {
+color: #aaa
+}
+.selector li .total {
+position: absolute;
+right: 0;
+color: #d7d7d7
+}
+.selector .price-slider {
+text-align: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+position: relative;
+padding-top: 17px
+}
 
 @media (min-width 992px)
     .product-inverter

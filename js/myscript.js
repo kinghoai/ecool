@@ -116,7 +116,7 @@ $(document).ready(function () {
 
     $(".related-items").slick({
         slidesToShow: 3,
-        dots: false,
+            dots: false,
         arrows: true,
         responsive: [
             {
@@ -138,5 +138,22 @@ $(document).ready(function () {
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({ position: uluru, map: map });
     }
+
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 3500,
+        step: 50,
+        slide: function( event, ui ) {
+            $( "#min-price").html(ui.values[ 0 ]);
+
+            suffix = '';
+            if (ui.values[ 1 ] == $( "#max-price").data('max') ){
+                suffix = ' +';
+            }
+            $( "#max-price").html(ui.values[ 1 ] + suffix);
+        }
+    });
+
 
 });
