@@ -139,7 +139,7 @@ $(document).ready(function () {
         var marker = new google.maps.Marker({ position: uluru, map: map });
     }
 
-    $(".slide-news").slick({
+    $(".slide-news__content").slick({
         slidesToShow: 1,
         dots: false,
         arrows: true,

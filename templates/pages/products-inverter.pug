@@ -49,7 +49,6 @@ block content
                                 img.select-box__icon(src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true")
                                 .price-slider
                                     #slider-range.ui-slider.ui-corner-all.ui-slider-horizontal.ui-widget.ui-widget-content
-                                    //- .ui-slider-range.ui-corner-all.ui-widget-header
                                     span.ui-slider-handle.ui-corner-all.ui-state-default(tabindex='0')
                                     span.ui-slider-handle.ui-corner-all.ui-state-default(tabindex='0')
                                     div.content-price
@@ -67,7 +66,6 @@ block content
                                 {name: 'Sắp xếp theo', value: '2'}, 
                                 ])
                 .product-list
-                    
                     each val in [1, 2, 3]
                         .row
                             +Product_item_style_1('Điều hoà Ecool INV2378','6.580.000đ')
@@ -75,27 +73,8 @@ block content
                             +Product_item_style_1('Điều hoà Ecool INV1456', '10.680.000đ')
                 .product-viewmore.text-center
                     a.btn#btn-viewmorde.p-2 Xem nhiều sản phẩm hơn
-        include ../partials/_news_home.pug
-        .container.container--1020.products-seen
-            .row
-                .col-12.text-center.title-products-seen
-                    h2.fs-18.fs-lg-26.font-weight-medium.mt-5.mb-5.text-center CÁC SẢN PHẨM ĐÃ XEM
-            .row.mb-5.pb-5
-                .col-12.col-lg-4.text-center
-                    img.img-item-product(src="images/product3.png", alt="") 
-                    .text-center
-                        h5.fs-10.text-center Điều hòa inverter
-                        p.fs-10.font-weight-semi-bold.text-center  3.260.000đ
-                .col-12.col-lg-4.text-center
-                    img.img-item-product(src="images/product3.png", alt="") 
-                    .text-center
-                        h5.fs-10.text-center Điều hòa inverter
-                        p.fs-10.font-weight-semi-bold.text-center  3.260.000đ
-                .col-12.col-lg-4.text-center
-                    img.img-item-product(src="images/product3.png", alt="") 
-                    .text-center
-                        h5.fs-10.text-center Điều hòa inverter
-                        p.fs-10.font-weight-semi-bold.text-center  3.260.000đ
-
+        include ../partials/_slide_news.pug
+        .container
+            include ../partials/_product_related.pug
 block scripts
     script(src='js/jquery-ui.min.js')
