@@ -139,4 +139,39 @@ $(document).ready(function () {
         var marker = new google.maps.Marker({ position: uluru, map: map });
     }
 
+    $(".slide-news__content").slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        // centerMode: true,
+        prevArrow: $('.arrow__left'),
+        nextArrow: $('.arrow__right'),
+    });
+    $(".selector-ranger").click(function () {
+        $(this).addClass("active");
+    });
+    $(document).on("click", function (e) {
+        if ($(e.target).is(".selector-ranger") === false) {
+            $(".selector-ranger").removeClass("active");
+        }
+    });
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 3500,
+        step: 50,
+        values: [0, 3500],
+        slide: function (event, ui) {
+            console.log(ui.values)
+            $("#min-price").html(ui.values[0]);
+            suffix = '';
+            if (ui.values[1] == $("#max-price").data('max')) {
+                suffix = ' +';
+            }
+            $("#max-price").html(ui.values[1] + suffix);
+        }
+    });
+
+
+
 });

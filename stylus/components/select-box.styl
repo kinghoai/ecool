@@ -13,9 +13,7 @@
     &:focus {
       & + .select-box__list {
         opacity: 1;
-
-        // We have to set "animation-name: none;" to make the list visible (read below how it works)
-
+        z-index 1
         animation-name: none;
         
         .select-box__option {
@@ -26,6 +24,7 @@
       .select-box__icon {
         transform: translateY(-50%) rotate(180deg);
       }
+      
     }
   }
   
@@ -55,8 +54,17 @@
     display: none;
     width: 100%;
     margin: 0;
-    padding: 0px 60px 0px 10px;
+    padding: 0px 40px 0px 10px;
     background-color: #fff;
+  }
+  @media (min-width 992px) {
+    &__input-text {
+      padding: 0px 60px 0px 10px;
+    }
+    
+    &__icon {
+      right: 5px;
+    }
   }
   
   &__list {
