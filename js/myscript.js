@@ -139,4 +139,13 @@ $(document).ready(function () {
         var marker = new google.maps.Marker({ position: uluru, map: map });
     }
 
+    $(".slide-news").slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        // centerMode: true,
+        prevArrow: $('.arrow__left'),
+        nextArrow: $('.arrow__right'),
+    });
+
 });

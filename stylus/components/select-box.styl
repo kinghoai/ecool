@@ -13,9 +13,7 @@
     &:focus {
       & + .select-box__list {
         opacity: 1;
-
-        // We have to set "animation-name: none;" to make the list visible (read below how it works)
-
+        z-index 1
         animation-name: none;
         
         .select-box__option {
