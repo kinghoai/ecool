@@ -1,0 +1,9 @@
+extends ../layouts/main.pug
+
+
+block content
+    #map
+block scripts
+    script(src="/js/my_map.js")
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAY38RQJoR42kbulqrivcRaeYPNGLB3gWc&callback=initMap')
+    
