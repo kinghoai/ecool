@@ -109,8 +109,10 @@ $(document).ready(function () {
 
     $(".news__slides").slick({
         slidesToShow: 1,
-        dots: false,
-        arrows: false,
+        dots: true,
+        arrows: true,
+        prevArrow: $('.news__slide-arrow-left'),
+        nextArrow: $('.news__slide-arrow-right'),
     });
 
     $(".related-items").slick({
