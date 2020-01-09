@@ -155,11 +155,13 @@ $(document).ready(function () {
         }
     });
 
-    // $(document).click(function(event){
-    //     if (!$(event.target).hasClass('show-search')) {
-    //         $("#form-search").removeClass("show-search");
-    //     }
-    // });
+    $(document).click(function(event){
+
+        if (!$(event.target).hasClass('search')) {
+            $("#form-search").removeClass("show-search");
+            $('#search-footer').removeClass('show-search-footer')
+        }
+    });
 
     $('#search-top').click(function () {
         $('#form-search').addClass('show-search')
