@@ -110,7 +110,9 @@ $(document).ready(function () {
     $(".news__slides").slick({
         slidesToShow: 1,
         dots: true,
-        arrows: false,
+        arrows: true,
+        prevArrow: $('.news__slide-arrow-left'),
+        nextArrow: $('.news__slide-arrow-right'),
     });
 
     $(".related-items").slick({
