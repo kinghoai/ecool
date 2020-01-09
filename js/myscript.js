@@ -65,7 +65,6 @@ $(document).ready(function () {
         asNavFor: ".product-thumbnails"
     });
 
-
     $("#slides-sonha").slick({
         slidesToShow: 1,
         dots: false,
