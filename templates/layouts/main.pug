@@ -115,8 +115,12 @@ html(lang='en')
             .col-6.col-lg-2
               h5.menu__title.fs-14.text-white.font-weight-semi-bold
                 | Liên hệ
-          .language-footer
-            <img class="search" src="images/searchwhite.png">
+          .language-footer.position-relative
+            img.search(src='images/searchwhite.png')
+            form(action='#', method='GET')#search-footer
+              input(type='text', placeholder='Search...', name='search').fs-11
+              button(type='submit')
+                img(src='images/search.png')
             a.language(href='index.html')
               img(src='images/languege1.png')
             a.language(href='index.html')

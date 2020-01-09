@@ -155,10 +155,22 @@ $(document).ready(function () {
         }
     });
 
+    // $(document).click(function(event){
+    //     if (!$(event.target).hasClass('show-search')) {
+    //         $("#form-search").removeClass("show-search");
+    //     }
+    // });
+
     $('#search-top').click(function () {
-        $('#form-search').addClass('show_search')
+        $('#form-search').addClass('show-search')
         $('#form-search input').focus()
     })
+
+    $('.language-footer .search').click(function () {
+        $('#search-footer').addClass('show-search-footer')
+        $('#search-footer input').focus()
+    })
+
 
     // $("#slider-range").slider({
     //     range: true,

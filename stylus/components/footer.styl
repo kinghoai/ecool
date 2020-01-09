@@ -51,6 +51,52 @@
             padding 0
             margin 10px
             width: 20px;
+    #search-footer
+        width 0
+        position absolute
+        z-index 10
+        height 40px
+        right 45px
+        top 0px
+        transition ease 0.5s
+        display flex
+        input
+            width 0
+            border-radius 0
+            border 0
+            padding 0
+            &:focus
+                outline none
+        button
+            width 0
+            background transparent
+            padding 0
+            border 0
+            position relative
+            right 30px
+    #search-footer.show-search-footer
+        width 300px
+        position absolute
+        z-index 10
+        height 40px
+        right 45px
+        top 0px
+        transition ease 0.5s
+        display flex
+        input
+            width 100%
+            border-radius 20px
+            border 1px solid #a4a7ab
+            padding 2px 15px
+            &:focus
+                outline none
+        button
+            width 20px
+            background transparent
+            padding 0
+            border 0
+            position relative
+            right 30px
 @media(min-width:992px)
     .subscribe
         padding 106px 0
@@ -88,3 +134,4 @@
         float right
     .sologan-footer
         padding-top 45px
+
