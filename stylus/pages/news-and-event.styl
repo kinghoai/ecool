@@ -59,6 +59,35 @@
         height 40%
         left 30px
         bottom 20px
+    .slick-dots
+        bottom: 25px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+        padding-right: 20px;
+        li
+            width 2px
+            height 6px
+            margin 0 4px
+            button
+                width 2px
+                height 6px
+                padding 0
+                &:before
+                    width: 2px;
+                    height: 6px;
+                    color: #fff;
+                    font-family: unset;
+                    background-color: #fff;
+                    content: '';
+                    opacity 0.8
+        li.slick-active
+            button
+                &:before
+                    color #ffffff
+                    opacity 1
 .ecool-news + footer
     .subscribe
         background-color: #fff

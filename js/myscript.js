@@ -109,7 +109,7 @@ $(document).ready(function () {
 
     $(".news__slides").slick({
         slidesToShow: 1,
-        dots: false,
+        dots: true,
         arrows: false,
     });
 
