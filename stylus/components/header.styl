@@ -33,6 +33,33 @@
             .language
                 width 20px
                 margin 0 auto
+        .search-block
+            position relative
+            #form-search
+                width 100%
+                position absolute
+                z-index 10
+                height 40px
+                right 0px
+                top 40px
+                transition ease 0.5s
+                display flex
+                input
+                    width 100%
+                    border-radius 20px
+                    border 1px solid #a4a7ab
+                    padding 2px 15px
+                    &:focus
+                        outline none
+                button
+                    width 20px
+                    background transparent
+                    padding 0
+                    border 0
+                    position relative
+                    right 30px
+        .language-block
+            margin-bottom 70px
 @media (min-width: 992px)
     header
         margin-bottom 0px
@@ -63,3 +90,42 @@
                 padding 9px 0 0px
                 display inline-block
                 margin-right 10px
+        .search-block
+            position relative
+            #form-search
+                width 0
+                position absolute
+                z-index 10
+                height 40px
+                right 0px
+                top 40px
+                transition ease 0.5s
+                display flex
+                input
+                    width 0
+                    border-radius 0
+                    border 0
+                    padding 0
+                    &:focus
+                        outline none
+                button
+                    width 0
+                    background transparent
+                    padding 0
+                    border 0
+                    position relative
+                    right 30px
+            #form-search.show_search
+                width 600px
+                right -5px
+                input
+                    width 100%
+                    border-radius 20px
+                    border 1px solid #a4a7ab
+                    padding 2px 15px
+                    &:focus
+                        outline none
+                button
+                    width 20px
+        .language-block
+            margin-bottom 0px

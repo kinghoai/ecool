@@ -40,8 +40,13 @@ html(lang='en')
                 a(href='/news-and-event.html') Tin tức
               li.nav-item
                 a(href='/contact.html') Liên hệ
-            img.search(src='images/search.png')
-            .text-center
+            .search-block
+              img.search.d-none.d-lg-block(src='images/search.png')#search-top
+              form(action='#', method='GET')#form-search
+                input(type='text', placeholder='Search...', name='search').fs-11
+                button(type='submit')
+                  img(src='images/search.png')
+            .text-center.language-block
               a.language(href='index.html')
                 img(src='images/languege1.png')
               a.language(href='index.html')

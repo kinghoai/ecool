@@ -154,23 +154,28 @@ $(document).ready(function () {
             $(".selector-ranger").removeClass("active");
         }
     });
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 3500,
-        step: 50,
-        values: [0, 3500],
-        slide: function (event, ui) {
-            console.log(ui.values)
-            $("#min-price").html(ui.values[0]);
-            suffix = '';
-            if (ui.values[1] == $("#max-price").data('max')) {
-                suffix = ' +';
-            }
-            $("#max-price").html(ui.values[1] + suffix);
-        }
-    });
 
+    $('#search-top').click(function () {
+        $('#form-search').addClass('show_search')
+        $('#form-search input').focus()
+    })
+
+    // $("#slider-range").slider({
+    //     range: true,
+    //     min: 0,
+    //     max: 3500,
+    //     step: 50,
+    //     values: [0, 3500],
+    //     slide: function (event, ui) {
+    //         console.log(ui.values)
+    //         $("#min-price").html(ui.values[0]);
+    //         suffix = '';
+    //         if (ui.values[1] == $("#max-price").data('max')) {
+    //             suffix = ' +';
+    //         }
+    //         $("#max-price").html(ui.values[1] + suffix);
+    //     }
+    // });
 
 
 });
