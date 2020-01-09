@@ -65,7 +65,6 @@ $(document).ready(function () {
         asNavFor: ".product-thumbnails"
     });
 
-
     $("#slides-sonha").slick({
         slidesToShow: 1,
         dots: false,
@@ -155,23 +154,42 @@ $(document).ready(function () {
             $(".selector-ranger").removeClass("active");
         }
     });
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 3500,
-        step: 50,
-        values: [0, 3500],
-        slide: function (event, ui) {
-            console.log(ui.values)
-            $("#min-price").html(ui.values[0]);
-            suffix = '';
-            if (ui.values[1] == $("#max-price").data('max')) {
-                suffix = ' +';
-            }
-            $("#max-price").html(ui.values[1] + suffix);
+
+    $(document).click(function(event){
+
+        if (!$(event.target).hasClass('search')) {
+            $("#form-search").removeClass("show-search");
+            $('#search-footer').removeClass('show-search-footer')
         }
     });
 
+    $('#search-top').click(function () {
+        $('#form-search').addClass('show-search')
+        $('#form-search input').focus()
+    })
+
+    $('.language-footer .search').click(function () {
+        $('#search-footer').addClass('show-search-footer')
+        $('#search-footer input').focus()
+    })
+
+
+    // $("#slider-range").slider({
+    //     range: true,
+    //     min: 0,
+    //     max: 3500,
+    //     step: 50,
+    //     values: [0, 3500],
+    //     slide: function (event, ui) {
+    //         console.log(ui.values)
+    //         $("#min-price").html(ui.values[0]);
+    //         suffix = '';
+    //         if (ui.values[1] == $("#max-price").data('max')) {
+    //             suffix = ' +';
+    //         }
+    //         $("#max-price").html(ui.values[1] + suffix);
+    //     }
+    // });
 
 
 });
