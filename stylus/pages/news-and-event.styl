@@ -73,7 +73,18 @@
     object-fit cover
 .news__tag
     position relative
-
+    background #30BCEE
+    padding-left 12px
+    width 60px
+    &:after
+        content ''
+        position absolute
+        width: 0;
+        height: 0;
+        border-top: 7.5px solid transparent;
+        border-bottom: 7.5px solid transparent;
+        border-left:8px solid #30BCEE;
+        right -8px
 @media (min-width: 992px)
     .menu-sub-news
         text-align center
